@@ -839,305 +839,6 @@
     margin-right:6px;
   }
 
-  /* ─── AI Layer 2/3 starter examples (workflows + agents) ── */
-  .ai-extras{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:14px;
-    margin-top:18px;
-  }
-  @media (max-width:900px){
-    .ai-extras{grid-template-columns:1fr}
-  }
-  .ai-extra{
-    background:#fff;
-    border:1px solid var(--rule);
-    border-radius:6px;
-    padding:22px 24px 20px;
-    box-shadow:var(--shadow-sm);
-    transition:.2s;
-    position:relative;
-  }
-  .ai-extra:hover{
-    box-shadow:var(--shadow-md);
-    border-color:rgba(184,144,46,.3);
-  }
-  .ai-extra-marker{
-    font-family:"Inter Tight",sans-serif;
-    font-size:9.5px;
-    letter-spacing:.18em;
-    text-transform:uppercase;
-    color:var(--brass);
-    font-weight:700;
-    margin-bottom:6px;
-  }
-  .ai-extra h4{
-    font-family:"Fraunces",serif;
-    font-size:20px;
-    color:var(--ink);
-    font-weight:500;
-    margin:0 0 8px;
-    line-height:1.2;
-  }
-  .ai-extra-stand{
-    font-family:"Fraunces",serif;
-    font-size:13.5px;
-    line-height:1.55;
-    color:var(--muted);
-    margin:0 0 12px;
-  }
-  .ai-extra-list{
-    list-style:none;
-    padding:0;
-    margin:0;
-  }
-  .ai-extra-list li{
-    font-family:"Fraunces",serif;
-    font-size:12.5px;
-    line-height:1.5;
-    color:var(--ink);
-    padding:6px 0;
-    border-top:1px dashed var(--rule);
-  }
-  .ai-extra-list li:first-child{border-top:none}
-  .ai-extra-list li strong{
-    color:var(--navy);
-    font-weight:600;
-    font-family:"Inter Tight",sans-serif;
-    font-size:10px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    margin-right:4px;
-  }
-
-  /* ─── AI Layer 2/3 starter examples (workflows + agents) end ── */
-  /* ─── AI maturity arc (Layer 1/2/3) ────────────────────── */
-  .ai-arc{
-    margin-top:8px;
-  }
-  .ai-arc-title{
-    font-family:"Fraunces",serif;
-    font-size:24px;
-    margin:0 0 8px;
-    font-weight:500;
-    color:var(--ink);
-  }
-  .ai-arc-lede{
-    font-family:"Fraunces",serif;
-    font-style:italic;
-    font-size:15px;
-    color:var(--muted);
-    line-height:1.55;
-    margin-bottom:24px;
-    max-width:880px;
-  }
-  .ai-layers{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:14px;
-    margin-bottom:16px;
-    align-items:start;
-  }
-  @media (max-width:1100px){
-    .ai-layers{grid-template-columns:1fr}
-  }
-  .ai-layer{
-    background:#fff;
-    border:1px solid var(--rule);
-    border-left:4px solid var(--brass);
-    border-radius:0 6px 6px 0;
-    padding:22px 22px 18px;
-    box-shadow:var(--shadow-sm);
-    transition:.2s;
-    position:relative;
-    display:flex;
-    flex-direction:column;
-  }
-  .ai-layer:hover{
-    box-shadow:var(--shadow-md);
-  }
-  .ai-layer-marker{
-    font-family:"Inter Tight",sans-serif;
-    font-size:10px;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--brass);
-    font-weight:700;
-    margin-bottom:8px;
-  }
-  .ai-layer h4{
-    font-family:"Fraunces",serif;
-    font-size:22px;
-    color:var(--ink);
-    font-weight:500;
-    margin:0 0 8px;
-    line-height:1.15;
-  }
-  .ai-layer-stand{
-    font-family:"Fraunces",serif;
-    font-style:italic;
-    font-size:13.5px;
-    line-height:1.55;
-    color:var(--muted);
-    margin:0 0 14px;
-  }
-  .ai-layer-list{
-    list-style:none;
-    padding:0;
-    margin:0;
-  }
-  .ai-layer-list li{
-    font-family:"Fraunces",serif;
-    font-size:13px;
-    line-height:1.55;
-    color:var(--ink);
-    padding:8px 0 8px 14px;
-    border-top:1px dashed var(--rule);
-    position:relative;
-  }
-  .ai-layer-list li:first-child{border-top:none;padding-top:10px}
-  .ai-layer-list li::before{
-    content:"·";
-    position:absolute;
-    left:3px;
-    top:4px;
-    color:var(--brass);
-    font-weight:700;
-    font-size:16px;
-  }
-  .ai-layer-list li strong{
-    color:var(--navy);
-    font-weight:600;
-    display:block;
-    font-size:10.5px;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    margin-bottom:2px;
-  }
-
-  /* ─── Key artefact styling (Decision Log spine) ─────────── */
-  .artefact.key{
-    border:1px solid rgba(184,144,46,.4);
-    border-left:4px solid var(--brass);
-    box-shadow:0 4px 16px rgba(184,144,46,.08), var(--shadow-sm);
-    background:linear-gradient(180deg, #fff 0%, var(--paper) 180%);
-  }
-  .artefact.key:hover{
-    box-shadow:0 6px 22px rgba(184,144,46,.18), var(--shadow-md);
-    border-color:rgba(184,144,46,.6);
-  }
-  .artefact.key[open]{
-    box-shadow:0 6px 22px rgba(184,144,46,.18), var(--shadow-md);
-  }
-  .artefact.key .num{
-    color:var(--brass);
-  }
-  .key-eyebrow{
-    font-family:"Inter Tight",sans-serif;
-    font-size:9.5px;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--brass);
-    font-weight:700;
-    margin-bottom:6px;
-  }
-
-  /* ─── Phase bands (Decision Integrity lifecycle) — collapsible ── */
-  details.phase{
-    margin:24px 0 0;
-  }
-  details.phase[open]{
-    margin-bottom:14px;
-  }
-  details.phase summary{
-    list-style:none;
-    cursor:pointer;
-  }
-  details.phase summary::-webkit-details-marker{display:none}
-  .phase-band{
-    padding:22px 28px 20px;
-    padding-right:140px;
-    background:linear-gradient(180deg, var(--paper-2) 0%, var(--paper) 100%);
-    border:1px solid var(--rule);
-    border-left:4px solid var(--brass);
-    border-radius:0 6px 6px 0;
-    position:relative;
-    transition:.2s;
-  }
-  details.phase summary:hover .phase-band{
-    box-shadow:var(--shadow-md);
-    border-color:rgba(184,144,46,.5);
-  }
-  details.phase summary:hover .phase-chev{
-    background:var(--navy);
-    color:#fff;
-    border-color:var(--navy);
-  }
-  details.phase summary:hover .phase-chev .label{color:#fff}
-  .phase-marker{
-    font-family:"Inter Tight",sans-serif;
-    font-size:10px;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--brass);
-    font-weight:700;
-    margin-bottom:8px;
-  }
-  .phase-title{
-    font-family:"Fraunces",serif;
-    font-size:26px;
-    color:var(--ink);
-    font-weight:500;
-    margin-bottom:10px;
-    line-height:1.2;
-  }
-  .phase-stand{
-    font-family:"Fraunces",serif;
-    font-style:italic;
-    font-size:15px;
-    line-height:1.55;
-    color:var(--muted);
-    margin:0;
-    max-width:820px;
-  }
-  .phase-chev{
-    position:absolute;
-    top:22px;
-    right:24px;
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:8px 14px;
-    background:#fff;
-    border:1px solid var(--navy);
-    border-radius:4px;
-    color:var(--navy);
-    font-family:"Inter Tight",sans-serif;
-    font-size:11px;
-    font-weight:600;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    transition:.2s;
-    white-space:nowrap;
-  }
-  .phase-chev .label{transition:color .2s}
-  .phase-chev .arrow{
-    display:inline-block;
-    transition:transform .25s;
-    font-size:14px;
-    line-height:1;
-  }
-  details.phase[open] .phase-chev{
-    background:var(--navy);
-    color:#fff;
-    border-color:var(--navy);
-  }
-  details.phase[open] .phase-chev .label{color:#fff}
-  details.phase[open] .phase-chev .arrow{transform:rotate(180deg)}
-  details.phase .values{
-    margin-top:14px;
-  }
-
   /* ─── Industry context expandable cards (mirror .artefact) ── */
   .industries{
     display:grid;
@@ -2213,18 +1914,17 @@
     <h4>The Field Guide</h4>
     <ul id="nav">
       <li><a href="#values" data-section="values"><span class="num">i</span>Values & Mindset</a></li>
-      <li><a href="#delivery" data-section="delivery"><span class="num">ii</span>Delivery vs Value</a></li>
+      <li><a href="#delivery" data-section="delivery"><span class="num">ii</span>Delivery Is Not Value</a></li>
       <li><a href="#babok" data-section="babok"><span class="num">iii</span>BABOK Alignment</a></li>
-      <li><a href="#floor" data-section="floor"><span class="num">01</span>The Foundation</a></li>
-      <li><a href="#integrity" data-section="integrity"><span class="num">02</span>Decision Integrity</a></li>
-      <li><a href="#tests" data-section="tests"><span class="num">03</span>Axe-Sharpening Before BRD</a></li>
-      <li><a href="#taxonomy" data-section="taxonomy"><span class="num">04</span>Classification & Naming</a></li>
-      <li><a href="#dor-dod" data-section="dor-dod"><span class="num">05</span>DoR / DoD</a></li>
-      <li><a href="#dialups" data-section="dialups"><span class="num">06</span>Dial-ups by Context</a></li>
-      <li><a href="#industry" data-section="industry"><span class="num">07</span>Dial-ups by Industry</a></li>
-      <li><a href="#methods" data-section="methods"><span class="num">08</span>Methods & Sequence</a></li>
-      <li><a href="#prompts" data-section="prompts"><span class="num">09</span>AI in the Practice</a></li>
-      <li><a href="#rhythm" data-section="rhythm"><span class="num">10</span>Operating Rhythm</a></li>
+      <li><a href="#floor" data-section="floor"><span class="num">01</span>The Floor</a></li>
+      <li><a href="#tests" data-section="tests"><span class="num">02</span>Axe-Sharpening Before BRD</a></li>
+      <li><a href="#taxonomy" data-section="taxonomy"><span class="num">03</span>Classification & Naming</a></li>
+      <li><a href="#dor-dod" data-section="dor-dod"><span class="num">04</span>DoR / DoD</a></li>
+      <li><a href="#dialups" data-section="dialups"><span class="num">05</span>Dial-ups by Context</a></li>
+      <li><a href="#industry" data-section="industry"><span class="num">06</span>Dial-ups by Industry</a></li>
+      <li><a href="#methods" data-section="methods"><span class="num">07</span>Methods & Sequence</a></li>
+      <li><a href="#prompts" data-section="prompts"><span class="num">08</span>Prompt Library</a></li>
+      <li><a href="#rhythm" data-section="rhythm"><span class="num">09</span>Operating Rhythm</a></li>
     </ul>
   </div>
 
@@ -2264,8 +1964,8 @@
 
   <div class="stats">
     <a class="stat" href="#floor"><div class="n">7<em>+</em>8</div><div class="l">Artefacts &amp; Techniques</div></a>
-    <a class="stat" href="#taxonomy"><div class="n">15<em>×</em></div><div class="l">Requirement Types</div></a>
-    <a class="stat" href="#integrity"><div class="n">3<em>×</em></div><div class="l">Integrity Phases</div></a>
+    <a class="stat" href="#taxonomy"><div class="n">9<em>×</em></div><div class="l">Requirement Types</div></a>
+    <a class="stat" href="#industry"><div class="n">8<em>×</em></div><div class="l">Industries Calibrated</div></a>
     <a class="stat" href="#prompts"><div class="n">12<em>+</em></div><div class="l">Prompt Templates</div></a>
   </div>
 </header>
@@ -2322,8 +2022,8 @@
     <div class="sec-num">ii</div>
     <div class="sec-title">
       <div class="kicker">The thesis · Why this practice exists</div>
-      <h2>Delivery <em>vs Value.</em></h2>
-      <p class="stand">A BA practice that produces excellent requirements for the wrong work is a practice doing harm at scale. Delivery and value are not the same thing — they're often in tension. Delivery is what gets shipped; value is what changes in how the enterprise actually works, after the project closes. The BA's most important contribution is making the distinction visible at every stage, and refusing to let the two be confused.</p>
+      <h2>Delivery Is <em>Not Value.</em></h2>
+      <p class="stand">A BA practice that produces excellent requirements for the wrong work is a practice doing harm at scale. Before any of the standards in this guide make sense, one truth has to land: delivery is not value. Value is operational leverage — what changes in how the enterprise actually works, after the project closes. The BA's most important contribution is upstream of the requirements, not in their fluency.</p>
     </div>
   </div>
 
@@ -2347,32 +2047,21 @@
 
   <div class="taxo">
     <table>
-      <thead><tr><th style="width:16%">Step</th><th style="width:26%">What it produces</th><th style="width:29%">The illusion it creates</th><th>What value should mean here</th></tr></thead>
+      <thead><tr><th style="width:22%">Step</th><th style="width:38%">What it produces</th><th>The illusion it creates</th></tr></thead>
       <tbody>
-        <tr><td><strong>Business Case</strong></td><td class="eg">A funded narrative of value.</td><td>The appearance of value before leverage exists.</td><td>A named operational change with a measurable outcome, an accountable owner for the change twelve months out, and a defined kill criteria.</td></tr>
-        <tr><td><strong>BRD</strong></td><td class="eg">A documented set of requirements.</td><td>The appearance of certainty before the problem is understood.</td><td>Requirements traceable to a specific decision in the decision pack, with the decision still verifiably live and owned.</td></tr>
-        <tr><td><strong>RFx</strong></td><td class="eg">A market test of vendors against the BRD.</td><td>The appearance of choice before trade-offs are owned.</td><td>Trade-offs (speed vs correctness, build vs buy, local vs enterprise) declared in writing and accepted by the decision owner before the market is tested.</td></tr>
-        <tr><td><strong>Vendor responses</strong></td><td class="eg">Detailed proposals matching the RFx.</td><td>The appearance of capability before the problem is sharpened.</td><td>Evidence that the chosen vendor can deliver against the actual operational change, not just the RFx as written.</td></tr>
-        <tr><td><strong>Contractual scope</strong></td><td class="eg">A signed scope, schedule, and price.</td><td>The appearance of control. Scope is now contractually locked, not strategically chosen.</td><td>Scope written so that re-decision is possible without contract penalty — value is preserved when reality shifts.</td></tr>
-        <tr><td><strong>Delivery</strong></td><td class="eg">A go-live, a launch, a closure report.</td><td>The appearance of success before anything in the operating model has actually changed.</td><td>The predicted operational change is happening — old work is stopping, new behaviour is starting, the predicted leverage is appearing in the evidence.</td></tr>
+        <tr><td><strong>Business Case</strong></td><td class="eg">A funded narrative of value.</td><td>The appearance of value before leverage exists.</td></tr>
+        <tr><td><strong>BRD</strong></td><td class="eg">A documented set of requirements.</td><td>The appearance of certainty before the problem is understood.</td></tr>
+        <tr><td><strong>RFx</strong></td><td class="eg">A market test of vendors against the BRD.</td><td>The appearance of choice before trade-offs are owned.</td></tr>
+        <tr><td><strong>Vendor responses</strong></td><td class="eg">Detailed proposals matching the RFx.</td><td>The appearance of capability before the problem is sharpened.</td></tr>
+        <tr><td><strong>Contractual scope</strong></td><td class="eg">A signed scope, schedule, and price.</td><td>The appearance of control. Scope is now contractually locked, not strategically chosen.</td></tr>
+        <tr><td><strong>Delivery</strong></td><td class="eg">A go-live, a launch, a closure report.</td><td>The appearance of success before anything in the operating model has actually changed.</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="not-cbap" style="border-left-color:var(--brass)">
     <div class="not-cbap-label" style="color:var(--brass)">The BA's leverage point</div>
-    <p>The earliest the BA usually enters is at the BRD step. By then, three illusions are already in place. The senior BA's job is not to write a polished BRD on top of a flawed business case — it's to surface the gap. Section §03 (the eight techniques) is the toolkit for doing that without becoming the obstacle the project routes around.</p>
-  </div>
-
-  <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:36px 0 14px;font-weight:500">What value the BA provides — and derives</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:820px">Across the six steps of the illusion stack, the senior BA delivers value into the system and pulls value back out from every stakeholder in it. This is the value exchange the practice is accountable for — not artefacts produced, not hours billed, not requirements written.</p>
-
-  <div class="values" style="margin-bottom:24px">
-    <div class="value"><div class="num">01</div><h3>Value the BA <em>provides</em> to the enterprise</h3><p>A separation between delivery and value at every step of the chain, defended in writing. A traceable line from the operational outcome back through the decision pack, the requirements, the contract, the build, and the adoption evidence. A practice that says "we shouldn't build this" when the evidence supports it, and "we should re-decide this" when reality shifts.</p><div class="check">"Could a leader who's never met me read this artefact and know what we decided, why, and what would say it worked?"</div></div>
-
-    <div class="value"><div class="num">02</div><h3>Value the BA <em>derives</em> from stakeholders</h3><p>From sponsors: the decision rules and trade-offs the BA writes against. From operators: the actual reality of work — what really happens, not what the SOP says. From SMEs: domain truth — the constraints, the dependencies, the things that have failed before. From change managers: the behaviour-change reality after go-live. From vendors: the gap between what was sold and what can be built. The BA's job is to extract these inputs cleanly, name them, and make them visible.</p><div class="check">"What did each stakeholder give me that the artefact would be wrong without?"</div></div>
-
-    <div class="value"><div class="num">03</div><h3>The value exchange</h3><p>Every artefact in this guide is both a product and a contract — the BA produces it, but the inputs come from people who own different parts of the truth. The Decision Log holds the sponsor's trade-offs. The Stakeholder Map holds the operating reality. The Assumptions register holds what nobody yet knows. None of these are the BA's opinion. The BA's job is to make the system in which the right people put the right inputs into the right artefacts — and then defend that system through delivery and adoption.</p><div class="check">"If I disappeared tomorrow, would the practice keep producing decision-quality artefacts — or would it produce documents?"</div></div>
+    <p>The earliest the BA usually enters is at the BRD step. By then, three illusions are already in place. The senior BA's job is not to write a polished BRD on top of a flawed business case — it's to surface the gap. Section §02 (the eight techniques) is the toolkit for doing that without becoming the obstacle the project routes around.</p>
   </div>
 </section>
 
@@ -2389,16 +2078,11 @@
         <div class="not-cbap-label">A note on what this is</div>
         <p>This is <strong>not</strong> the CBAP study guide. It's not a textbook, a glossary, or a certification primer. It's a working reference for what a senior practitioner does day-to-day — informed by BABOK, but written for the operator, not the exam candidate. If you're CBAP-trained, the alignment will be obvious. If you're not, you don't need to be: the BABOK references are signposts, not prerequisites.</p>
       </div>
-
-      <div class="not-cbap" style="border-left-color:var(--brass);margin-top:14px">
-        <div class="not-cbap-label" style="color:var(--brass)">A note on BABOK's age</div>
-        <p>BABOK v3 was published in 2015. A lot has happened since — Generative AI, agentic systems, cloud-native architectures, the shift from project-funded delivery to product-funded teams, data mesh, the elevation of decision intelligence, the codification of change management as a peer discipline. None of this is in v3, and the standard is overdue for an update. <strong>That said:</strong> what v3 covers — knowledge areas, classification schema, techniques, perspectives, underlying competencies — still holds. The foundation is sound. This guide treats BABOK v3 as the load-bearing standard and layers the post-2015 evolution on top (AI maturity arc in §09, decision integrity through delivery in §02, dial-ups by industry in §07). Apply the standard. Don't wait for v4 to bring the rest of the practice forward.</p>
-      </div>
     </div>
   </div>
 
   <h3 style="font-family:'Fraunces',serif;font-size:24px;margin-bottom:14px;font-weight:500">Six knowledge areas</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">Tasks may be performed sequentially, iteratively, or simultaneously — BABOK does not prescribe order, only that necessary inputs are present. The practice operating sequence (§08) is the prescribed order on top of BABOK.</p>
+  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">Tasks may be performed sequentially, iteratively, or simultaneously — BABOK does not prescribe order, only that necessary inputs are present. The practice operating sequence (§06) is the prescribed order on top of BABOK.</p>
 
   <div class="taxo">
     <table>
@@ -2415,7 +2099,7 @@
   </div>
 
   <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:36px 0 14px;font-weight:500">Perspectives we apply</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">BABOK names five perspectives — lenses for adapting the standard to context. The BA chooses the right lens for the project class. None are mutually exclusive; most transformation work blends three or four.</p>
+  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">BABOK perspectives are lenses for adapting the standard to context. A world-class practice spans all five — plus AI, which BABOK doesn't yet name as a perspective but which now shapes how the work gets done. The BA chooses the right lens for the project class.</p>
 
   <div class="values">
     <div class="value"><div class="num">01</div><h3>Agile</h3><p>Continuous elicitation, iterative refinement, backlog as living requirements register, acceptance criteria written at story level.</p><div class="check">Anchors story-level requirements work, sprint-by-sprint refinement.</div></div>
@@ -2427,44 +2111,21 @@
     <div class="value"><div class="num">04</div><h3>Business Architecture</h3><p>Capability maps, value streams, strategic intent &amp; portfolio sequencing. The lens for cross-program decision packs.</p><div class="check">Anchors Strategy Analysis on portfolio &amp; modernisation programmes.</div></div>
 
     <div class="value"><div class="num">05</div><h3>Business Intelligence</h3><p>Reporting, dashboards, analytics. Data quality and lineage requirements. The reporting lens for traceability and outcome dashboards.</p><div class="check">Anchors the RPT type and the outcome dashboard.</div></div>
+
+    <div class="value"><div class="num">06</div><h3>AI</h3><p>Generative AI for elicitation scaffolding and requirement drafting. AI-assisted workflows for refinement, classification, and traceability. Agentic AI for downstream automation — ticket creation, test case drafting, register audits.</p><div class="check">Anchors the prompt library (§07) and the AI-augmented BA standards.</div></div>
+
+    <div class="value"><div class="num">07</div><h3>Techniques in heaviest use</h3><p>Workshops · Interviews · Observation. Process Modelling · Process Analysis. Stakeholder List, Map &amp; Personas · RACI. Acceptance &amp; Evaluation Criteria · Scope Modelling. Decision Analysis · Risk Analysis &amp; Management.</p><div class="check">The default toolkit — used on virtually every engagement.</div></div>
   </div>
-
-  <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:36px 0 14px;font-weight:500">Beyond the standard</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:820px">Two areas the practice operates in that BABOK v3 doesn't name as perspectives — but that a senior BA can't ignore. The first is AI, which is reshaping how and by whom requirements get produced. The second is the working technique toolkit — the methods in heaviest day-to-day use, anchored in BABOK's fifty techniques but applied as a practitioner's default kit rather than a textbook list.</p>
-
-  <div class="values" style="grid-template-columns:1fr">
-    <div class="value" style="border-left:4px solid var(--brass)"><div class="key-eyebrow">Extension · Not yet a BABOK perspective</div><h3>AI in the practice</h3><p>A maturity arc through three layers: Generative AI prompts (today), AI-assisted workflows (near-term), and agentic systems (emerging). BABOK doesn't yet name AI as a perspective — but how the BA produces requirements, and increasingly who produces them, now turns on it. The senior BA applies the same standards (evidence, classification, traceability) to AI-produced outputs as to any other source; the BA stays accountable for what enters the register.</p><div class="check">Anchors §09 AI in the BA Practice — prompts, workflows, agents.</div></div>
-  </div>
-
-  <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:36px 0 14px;font-weight:500">Techniques in heaviest use</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:820px">BABOK names fifty techniques. In day-to-day practice, ten or so do most of the work. This is the senior BA's default toolkit — not the only techniques applied, but the ones reached for first, on virtually every engagement. The remaining techniques in the BABOK appendix earn their keep in specific contexts (§06 Dial-ups by Context, §07 Dial-ups by Industry name when).</p>
-
-  <div class="taxo" style="margin-bottom:24px">
-    <table>
-      <thead><tr><th style="width:30%">Technique cluster</th><th>What it does</th><th style="width:22%">BABOK anchor</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Workshops · Interviews · Observation</strong></td><td>The three elicitation primitives. Workshops for consensus, interviews for depth, observation for the gap between stated and actual practice.</td><td class="eg">EC 4.1–4.3 · Elicitation</td></tr>
-        <tr><td><strong>Process Modelling · Process Analysis</strong></td><td>As-is and to-be modelling. The discipline that turns "the business" into a set of named, owned, decomposable processes — which is what makes traceable requirements possible.</td><td class="eg">RADD · Specify &amp; Model · Functional Decomposition</td></tr>
-        <tr><td><strong>Stakeholder List, Map &amp; Personas · RACI</strong></td><td>Naming who has decision rights, who has influence, who has interest, who needs to be informed. The discipline that prevents "the steering committee" from absorbing accountability that belongs to a named person.</td><td class="eg">BAPM 3.2 · Plan Stakeholder Engagement</td></tr>
-        <tr><td><strong>Acceptance &amp; Evaluation Criteria · Scope Modelling</strong></td><td>How we know a requirement is done; how we know the project is in or out. Acceptance criteria written as Given/When/Then are testable. Scope modelling with paired in/out stops makes deferral and de-scoping explicit, not implied.</td><td class="eg">RADD 7.4 · Define Requirements Architecture</td></tr>
-        <tr><td><strong>Decision Analysis · Risk Analysis &amp; Management</strong></td><td>The pair that sits under §02 Decision Integrity. Decision Analysis surfaces options and trade-offs; Risk Analysis names what could break the decision and how we'd know. Both feed the Decision Log and the Assumptions register.</td><td class="eg">SA 6.3 · Assess Risks · BAPM 3.5</td></tr>
-        <tr><td><strong>Document Analysis · Data Mining · Interface Analysis</strong></td><td>When the current state is undocumented, contested, or both. The BA reads the system, the data, the tickets, and reconstructs reality from evidence rather than memory.</td><td class="eg">EC · Elicitation techniques</td></tr>
-        <tr><td><strong>Business Cases · Pre-mortem · SWOT</strong></td><td>Strategic framing techniques. Business cases for funding decisions, pre-mortem for value risk before delivery, SWOT for option-level positioning. All three sit upstream of the BRD and feed §03 Axe-Sharpening.</td><td class="eg">SA 6.4 · Define Change Strategy</td></tr>
-        <tr><td><strong>User Stories · Item Tracking · Reviews</strong></td><td>The working-level techniques that keep the practice running day-to-day. User stories at story level, item tracking for assumptions/risks/open questions, reviews as the quality bar mechanism in the practice forum (§10).</td><td class="eg">RLCM · Maintain · BAPM 3.5</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="color:var(--muted);font-size:13px;font-style:italic;font-family:'Fraunces',serif;max-width:820px">The full BABOK technique catalogue (Appendix A, fifty techniques) remains the reference. This table names what the senior practitioner reaches for first — and what the practice forum (§10) is most often critiquing the application of.</p>
 
   <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:36px 0 14px;font-weight:500">BABOK Requirements Classification Schema (§2.3)</h3>
-  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">BABOK defines four canonical levels. The fifteen-type taxonomy in this guide (§04 Classification &amp; Naming) sits inside the <strong>Solution Requirements</strong> level — it does not replace the schema, it operationalises it.</p>
+  <p style="color:var(--muted);font-size:14px;margin-bottom:18px;max-width:780px">BABOK defines four canonical levels. The nine-type taxonomy in this guide (§03 Classification &amp; Naming) sits inside the <strong>Solution Requirements</strong> level — it does not replace the schema, it operationalises it.</p>
 
   <div class="taxo">
     <table>
       <thead><tr><th style="width:24%">BABOK Level</th><th style="width:38%">Definition</th><th>Where it lives in the practice</th></tr></thead>
       <tbody>
-        <tr><td><strong>Business Requirements</strong></td><td class="eg">Higher-level statements of goals, objectives, needs of the enterprise.</td><td>Problem Statement (Artefact 2) · Decision Log (Artefact 1) · Outcome statement.</td></tr>
-        <tr><td><strong>Stakeholder Requirements</strong></td><td class="eg">Needs of stakeholders that must be met to achieve business requirements.</td><td>Stakeholder &amp; Decision-rights Map (Artefact 3) · Service / Process Inventory (Artefact 4).</td></tr>
+        <tr><td><strong>Business Requirements</strong></td><td class="eg">Higher-level statements of goals, objectives, needs of the enterprise.</td><td>Problem Statement (Artefact 1) · Decision pack · Outcome statement.</td></tr>
+        <tr><td><strong>Stakeholder Requirements</strong></td><td class="eg">Needs of stakeholders that must be met to achieve business requirements.</td><td>Stakeholder &amp; Decision-rights Map (Artefact 2) · Service / Process Inventory (Artefact 3).</td></tr>
         <tr><td><strong>Solution Requirements</strong> — Functional</td><td class="eg">Capabilities the solution must have — behaviour, information, interactions.</td><td>Practice types: <span class="babok-inline">FUN</span> <span class="babok-inline">BIZ</span> <span class="babok-inline">DAT</span> <span class="babok-inline">INT</span> <span class="babok-inline">WFL</span> <span class="babok-inline">EXC</span> <span class="babok-inline">RPT</span></td></tr>
         <tr><td><strong>Solution Requirements</strong> — Non-functional</td><td class="eg">Conditions under which the solution must remain effective — performance, availability, usability, security, compliance.</td><td>Practice types: <span class="babok-inline">PRF</span> <span class="babok-inline">AVL</span> <span class="babok-inline">USB</span> <span class="babok-inline">SEC</span> <span class="babok-inline">CMP</span> <span class="babok-inline">AUD</span></td></tr>
         <tr><td><strong>Transition Requirements</strong></td><td class="eg">Capabilities needed only for transition from current state to future state.</td><td>Practice types: <span class="babok-inline">MIG</span> <span class="babok-inline">CFG</span> · Cutover criteria · Decommissioning.</td></tr>
@@ -2477,14 +2138,13 @@
     <cite>The relationship</cite>
   </div>
 </section>
-
 <!-- ─── THE FLOOR (7 artefacts) ─── -->
 <section id="floor" data-search>
   <div class="sec-head">
     <div class="sec-num">01</div>
     <div class="sec-title">
       <div class="kicker">The minimum · Non-negotiable</div>
-      <h2>The Foundation — <em>seven artefacts</em></h2>
+      <h2>The Floor — <em>seven artefacts</em></h2>
       <p class="stand">Every project. Right-sized to context, but never absent. Each artefact carries its purpose, a working template, and a worked example drawn from real transformation programmes.</p>
     </div>
   </div>
@@ -2492,65 +2152,9 @@
   <div class="grid-7">
 
     <!-- 1. Problem Statement -->
-    <details class="artefact key" data-search>
-      <summary>
-        <div class="num">1</div>
-        <div>
-          <div class="key-eyebrow">Key artefact · The spine of decision integrity</div>
-          <div class="h">Decision Log</div>
-          <div class="d">Every binding decision — date, owner, rationale, constraints. Not "we agreed in standup."</div>
-        </div>
-        <div class="chev"><span class="label">Read</span> <span class="arrow">⌄</span></div>
-      </summary>
-      <div class="body">
-        <div class="babok-strip">
-          <span class="babok-label">BABOK</span>
-          <span class="babok-tag"><span class="ka">RLCM 5.5</span> <span class="desc">· Approve Requirements</span></span>
-          <span class="babok-tag"><span class="ka">BAPM 3.4</span> <span class="desc">· Plan BA Information Management</span></span>
-          <span class="babok-tag"><span class="ka">Tech</span> <span class="desc">· Decision Analysis · Decision Modelling</span></span>
-        </div>
-        <h4>Purpose</h4>
-        <p>Decisions are logged, not remembered. Survives team changes, disputes, audits. Operationalises the BABOK Decision Analysis technique — every binding decision captured with the alternatives considered and the constraints that bound the choice.</p>
-
-        <h4>Template — Decision log entries</h4>
-        <div class="tmpl-table">
-          <table>
-            <caption>Decision log · per binding decision</caption>
-            <thead><tr><th style="width:11%">Date</th><th>Decision</th><th>Owner</th><th>Rationale</th><th>Constraints binding</th><th>Revisit?</th></tr></thead>
-            <tbody>
-              <tr><td><em>yyyy/mm/dd</em></td><td><em>decision in one line</em></td><td><em>name</em></td><td><em>why this option</em></td><td><em>reg · cost · time · data</em></td><td><em>Y / N — when</em></td></tr>
-              <tr><td><em>yyyy/mm/dd</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h4>Template — Alternatives considered</h4>
-        <div class="tmpl-table">
-          <table>
-            <caption>For each decision · alternatives &amp; why not chosen</caption>
-            <thead><tr><th style="width:24%">Option</th><th>Why not chosen</th><th style="width:24%">Evidence reviewed</th></tr></thead>
-            <tbody>
-              <tr><td><em>Option A</em></td><td><em>specific reason</em></td><td><em>link to source</em></td></tr>
-              <tr><td><em>Option B</em></td><td><em>specific reason</em></td><td><em>link to source</em></td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h4>Worked example — PPM rollout</h4>
-        <div class="ex">
-          <div class="label">Decision · MVP scope realignment</div>
-          <strong>Decision:</strong> Realign MVP scope to 7 Must-Have backlog items, target single go-live with a fallback option for one division.<br>
-          <strong>Owner:</strong> Programme Control Group (chaired by Head of Delivery).<br>
-          <strong>Rationale:</strong> Vendor capacity constraints made full scope unviable; split go-live considered and rejected due to data integrity risk.<br>
-          <strong>Revisit:</strong> Yes — at next governance gate.
-        </div>
-      </div>
-    </details>
-
-    <!-- 2. Stakeholder & Decision-rights Map -->
     <details class="artefact" data-search>
       <summary>
-        <div class="num">2</div>
+        <div class="num">1</div>
         <div>
           <div class="h">Problem Statement</div>
           <div class="d">One page. The business problem in the operator's language, with evidence, owner, and what fails if we do nothing.</div>
@@ -2598,10 +2202,10 @@
       </div>
     </details>
 
-    <!-- 3. Service / Process Inventory -->
+    <!-- 2. Stakeholder & Decision-rights Map -->
     <details class="artefact" data-search>
       <summary>
-        <div class="num">3</div>
+        <div class="num">2</div>
         <div>
           <div class="h">Stakeholder &amp; Decision-rights Map</div>
           <div class="d">Who decides, who signs off, who escalates. The map that prevents committee paralysis.</div>
@@ -2658,10 +2262,10 @@
       </div>
     </details>
 
-    <!-- 4. Requirements Register -->
+    <!-- 3. Service / Process Inventory -->
     <details class="artefact" data-search>
       <summary>
-        <div class="num">4</div>
+        <div class="num">3</div>
         <div>
           <div class="h">Service / Process Inventory</div>
           <div class="d">What journeys and processes are in scope, with owners and current pain points anchored in evidence.</div>
@@ -2707,15 +2311,15 @@
         <h4>Worked example — HR transformation programme</h4>
         <div class="ex">
           <div class="label">Service journey decomposition</div>
-          A journey like Higher Duties is decomposed into phases, each phase into a discrete set of business processes, each business process into individually testable requirements. Traceability runs end-to-end — phase → process → requirement → test case — so the BA can answer "which decision is this serving?" at any level. The structure also makes it possible for stakeholders to contribute requirements directly inside it, without the BA writing in isolation.
+          13 epics → 59 business processes. Each journey broken into phases, each phase into requirements. <span class="emph">A single Higher Duties journey</span> alone produced 4 phases and ~30 requirements with full traceability through to test cases — written largely by the business inside the structure the BA designed.
         </div>
       </div>
     </details>
 
-    <!-- 5. Decision Log -->
+    <!-- 4. Requirements Register -->
     <details class="artefact" data-search>
       <summary>
-        <div class="num">5</div>
+        <div class="num">4</div>
         <div>
           <div class="h">Requirements Register</div>
           <div class="d">The single source of truth — for example a Confluence requirements table or a Jira backlog. Traceable end-to-end. Every line testable.</div>
@@ -2736,7 +2340,7 @@
 
         <h4>Required fields</h4>
         <ul>
-          <li><strong>ID</strong> — using practice naming convention (see §04)</li>
+          <li><strong>ID</strong> — using practice naming convention (see §03)</li>
           <li><strong>Type</strong> — functional, data, integration, workflow, reporting, NFR, compliance, migration, security</li>
           <li><strong>Epic / Phase / Process</strong> — full traceability up</li>
           <li><strong>Description</strong> — clear, testable, single-purpose</li>
@@ -2769,6 +2373,61 @@
       </div>
     </details>
 
+    <!-- 5. Decision Log -->
+    <details class="artefact" data-search>
+      <summary>
+        <div class="num">5</div>
+        <div>
+          <div class="h">Decision Log</div>
+          <div class="d">Every binding decision — date, owner, rationale, constraints. Not "we agreed in standup."</div>
+        </div>
+        <div class="chev"><span class="label">Read</span> <span class="arrow">⌄</span></div>
+      </summary>
+      <div class="body">
+        <div class="babok-strip">
+          <span class="babok-label">BABOK</span>
+          <span class="babok-tag"><span class="ka">RLCM 5.5</span> <span class="desc">· Approve Requirements</span></span>
+          <span class="babok-tag"><span class="ka">BAPM 3.4</span> <span class="desc">· Plan BA Information Management</span></span>
+          <span class="babok-tag"><span class="ka">Tech</span> <span class="desc">· Decision Analysis · Decision Modelling</span></span>
+        </div>
+        <h4>Purpose</h4>
+        <p>Decisions are logged, not remembered. Survives team changes, disputes, audits. Operationalises the BABOK Decision Analysis technique — every binding decision captured with the alternatives considered and the constraints that bound the choice.</p>
+
+        <h4>Template — Decision log entries</h4>
+        <div class="tmpl-table">
+          <table>
+            <caption>Decision log · per binding decision</caption>
+            <thead><tr><th style="width:11%">Date</th><th>Decision</th><th>Owner</th><th>Rationale</th><th>Constraints binding</th><th>Revisit?</th></tr></thead>
+            <tbody>
+              <tr><td><em>yyyy/mm/dd</em></td><td><em>decision in one line</em></td><td><em>name</em></td><td><em>why this option</em></td><td><em>reg · cost · time · data</em></td><td><em>Y / N — when</em></td></tr>
+              <tr><td><em>yyyy/mm/dd</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td><td><em>…</em></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Template — Alternatives considered</h4>
+        <div class="tmpl-table">
+          <table>
+            <caption>For each decision · alternatives &amp; why not chosen</caption>
+            <thead><tr><th style="width:24%">Option</th><th>Why not chosen</th><th style="width:24%">Evidence reviewed</th></tr></thead>
+            <tbody>
+              <tr><td><em>Option A</em></td><td><em>specific reason</em></td><td><em>link to source</em></td></tr>
+              <tr><td><em>Option B</em></td><td><em>specific reason</em></td><td><em>link to source</em></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Worked example — PPM rollout</h4>
+        <div class="ex">
+          <div class="label">Decision · MVP scope realignment</div>
+          <strong>Decision:</strong> Realign MVP scope to 7 Must-Have backlog items, target single go-live with a fallback option for one division.<br>
+          <strong>Owner:</strong> Programme Control Group (chaired by Head of Delivery).<br>
+          <strong>Rationale:</strong> Vendor capacity constraints made full scope unviable; split go-live considered and rejected due to data integrity risk.<br>
+          <strong>Revisit:</strong> Yes — at next governance gate.
+        </div>
+      </div>
+    </details>
+
     <!-- 6. Assumptions, Constraints, Open Questions -->
     <details class="artefact" data-search>
       <summary>
@@ -2784,11 +2443,10 @@
           <span class="babok-label">BABOK</span>
           <span class="babok-tag"><span class="ka">BAPM</span> <span class="desc">· Planning &amp; Monitoring</span></span>
           <span class="babok-tag"><span class="ka">RADD</span> <span class="desc">· Requirements Analysis &amp; Design Definition</span></span>
-          <span class="babok-tag"><span class="ka">RLCM 5.4</span> <span class="desc">· Assess Requirements Changes</span></span>
           <span class="babok-tag"><span class="ka">Tech</span> <span class="desc">· Risk Analysis · Item Tracking · Assumptions Log</span></span>
         </div>
         <h4>Purpose</h4>
-        <p>Surfaces what we're assuming, what binds us, and what we still don't know — with named owners and dates so nothing rots. Pairs the BABOK Risk Analysis technique with Item Tracking; every entry has an owner and a due-by-date. The lifecycle view (below) operationalises BABOK's <em>Assess Requirements Changes</em> task — making assumption drift visible the moment a trigger event fires.</p>
+        <p>Surfaces what we're assuming, what binds us, and what we still don't know — with named owners and dates so nothing rots. Pairs the BABOK Risk Analysis technique with Item Tracking; every entry has an owner and a due-by-date.</p>
 
         <h4>Template — Assumptions</h4>
         <div class="tmpl-table">
@@ -2800,22 +2458,6 @@
             </tbody>
           </table>
         </div>
-
-        <h4>Template — Assumption lifecycle</h4>
-        <p style="color:var(--muted);font-size:13px;margin:6px 0 8px;font-style:italic;font-family:'Fraunces',serif">An assumption isn't a static entry — it moves through states. The lifecycle column makes assumption drift visible. See §02 Decision Integrity for the discipline this template enables.</p>
-        <div class="tmpl-table">
-          <table>
-            <caption>Assumption lifecycle · state &amp; trigger event</caption>
-            <thead><tr><th style="width:9%">ID</th><th style="width:18%">State</th><th>Trigger event for re-test</th><th style="width:14%">Action owner</th><th style="width:14%">Last reviewed</th></tr></thead>
-            <tbody>
-              <tr><td>AS001</td><td><em>Stated</em></td><td><em>what would cause us to re-test it</em></td><td><em>name</em></td><td><em>yyyy/mm/dd</em></td></tr>
-              <tr><td>AS001</td><td><em>Tested → Validated</em></td><td><em>evidence reviewed</em></td><td><em>name</em></td><td><em>yyyy/mm/dd</em></td></tr>
-              <tr><td>AS002</td><td><em>Tested → Broken</em></td><td><em>what changed; decision impact</em></td><td><em>name</em></td><td><em>yyyy/mm/dd</em></td></tr>
-              <tr><td>AS003</td><td><em>Action taken</em></td><td><em>decision re-opened · constraint added · risk logged</em></td><td><em>name</em></td><td><em>yyyy/mm/dd</em></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="tmpl-note"><strong>Rule</strong>Every assumption gets a trigger event the day it's logged. An assumption with no defined re-test trigger is a wish.</div>
 
         <h4>Template — Constraints</h4>
         <div class="tmpl-table">
@@ -2908,111 +2550,10 @@
   </div>
 </section>
 
-<!-- ─── DECISION INTEGRITY ─── -->
-<section id="integrity" data-search>
-  <div class="sec-head">
-    <div class="sec-num">02</div>
-    <div class="sec-title">
-      <div class="kicker">The spine · Pre-delivery → delivery → post-implementation</div>
-      <h2>Decision <em>Integrity.</em></h2>
-      <p class="stand">A decision made well at the framing stage is worth nothing if it doesn't survive delivery. The hardest BA work isn't writing the BRD — it's holding the line on the decision the BRD was built to enable, through scope changes, sponsor turnover, vendor pressure, go-live theatre, and the quiet erosion of "we agreed in standup." Decision integrity is the spine of the practice. It runs from the moment a decision is framed (§03) to the moment its value is verified, often twelve months after go-live.</p>
-    </div>
-  </div>
-
-  <div class="not-cbap" style="border-left-color:var(--brass);margin-bottom:32px">
-    <div class="not-cbap-label" style="color:var(--brass)">Why this section sits at §02, not at the end</div>
-    <p>Most BA practices treat post-implementation as an afterthought — a "we'll do a PIR if time permits" appendix. That's where value dies. Decision integrity is foundational, not closing. It's the discipline that says: the decision we made at the start is the one we're accountable to at the end, and any drift between the two must be named, owned, and re-decided — never absorbed silently.</p>
-  </div>
-
-  <div class="babok-strip">
-    <span class="babok-label">BABOK</span>
-    <span class="babok-tag"><span class="ka">RLCM</span> <span class="desc">· Requirements Life Cycle Mgmt</span></span>
-    <span class="babok-tag"><span class="ka">RLCM 5.3</span> <span class="desc">· Prioritise Requirements</span></span>
-    <span class="babok-tag"><span class="ka">RLCM 5.4</span> <span class="desc">· Assess Requirements Changes</span></span>
-    <span class="babok-tag"><span class="ka">SE</span> <span class="desc">· Solution Evaluation</span></span>
-    <span class="babok-tag"><span class="ka">SE 8.1</span> <span class="desc">· Measure Solution Performance</span></span>
-    <span class="babok-tag"><span class="ka">SE 8.4</span> <span class="desc">· Assess Enterprise Limitations</span></span>
-    <span class="babok-tag"><span class="ka">SE 8.5</span> <span class="desc">· Recommend Actions</span></span>
-  </div>
-
-  <!-- ─── Phase 1: Pre-delivery ─── -->
-  <details class="phase" open>
-    <summary class="phase-band">
-      <div class="phase-marker">Phase 1 of 3</div>
-      <h3 class="phase-title">Pre-delivery — Holding the line on decisions made</h3>
-      <p class="phase-stand">Between decision pack signed and BRD published, three things can quietly erode: the decision can drift, the assumptions underneath it can break, and the ownership can dilute. The pre-delivery discipline is to make these visible the moment they move — not at the next steering committee.</p>
-      <div class="phase-chev"><span class="label">Phase</span> <span class="arrow">⌄</span></div>
-    </summary>
-    <div class="values">
-    <div class="value"><div class="num">01</div><h3>No silent re-decision</h3><p>Any change to a decision recorded in the Decision Log (Artefact 1) must be re-opened explicitly — same owner, same constraints check, new entry. A decision that shifts in a corridor isn't a decision; it's drift.</p><div class="check">"If this changed, would the original decision owner notice?"</div></div>
-
-    <div class="value"><div class="num">02</div><h3>Assumption lifecycle, not assumption list</h3><p>Assumptions don't sit static — they get tested, validated, or break. Each one has a trigger event (when we'd know) and an action owner (who responds). A register of unmoved assumptions is theatre.</p><div class="check">"Which assumption would, if it broke this week, force a decision to be re-opened?"</div></div>
-
-    <div class="value"><div class="num">03</div><h3>Decision-pack to BRD traceability</h3><p>Every section of the BRD answers back to a specific decision in the pack. If a requirement doesn't trace upward to a decision, it shouldn't be in scope. Test: pick any FUN requirement at random — can you name the decision it enables?</p><div class="check">"Which decision is this requirement serving — and is that decision still live?"</div></div>
-
-    <div class="value"><div class="num">04</div><h3>Constraint expiry dates</h3><p>Constraints (regulatory, contractual, capability, time) have expiry conditions. A constraint that was binding at framing may no longer bind by BRD sign-off. Re-check the constraints column before approving the BRD.</p><div class="check">"Are all the constraints that shaped this decision still in force?"</div></div>
-    </div>
-  </details>
-
-  <!-- ─── Phase 2: Through delivery ─── -->
-  <details class="phase">
-    <summary class="phase-band">
-      <div class="phase-marker">Phase 2 of 3</div>
-      <h3 class="phase-title">Through delivery — Decision integrity under pressure</h3>
-      <p class="phase-stand">From BRD sign-off to go-live is where decisions die quietly. Sponsors change, vendors push back, dates slip, "minor scope adjustments" accumulate. The BA's job through delivery isn't to write more requirements — it's to keep the original decision visible while the delivery machine optimises for shipping. This is also where the BA and the Change Manager work as a paired discipline, not in sequence.</p>
-      <div class="phase-chev"><span class="label">Phase</span> <span class="arrow">⌄</span></div>
-    </summary>
-    <div class="values">
-    <div class="value"><div class="num">05</div><h3>Decision re-opening, not scope creep</h3><p>When pressure mounts to "just add this one thing," the right move isn't a change request — it's to re-open the underlying decision. Naming the parent decision usually reveals the change as either trivial (proceed) or a different project (defer).</p><div class="check">"Is this a scope adjustment, or a different decision wearing scope's clothes?"</div></div>
-
-    <div class="value"><div class="num">06</div><h3>Stakeholder alignment under turnover</h3><p>If the sponsor, accountable owner, or named decision-rights holder changes mid-delivery, the decision is provisional until the new owner re-confirms it. Re-confirmation is a meeting and a Decision Log entry, not a forwarded email.</p><div class="check">"Has the new owner explicitly inherited the decision, or just the project?"</div></div>
-
-    <div class="value"><div class="num">07</div><h3>Change-management pair, not handoff</h3><p>The Change Manager is not the BA's successor at go-live. The pair works the same decisions: the BA tracks decision integrity in scope and design; the Change Manager tracks decision integrity in behaviour and adoption. Same decisions, different observation points.</p><div class="check">"Who else is tracking whether this decision is still alive in the business?"</div></div>
-
-    <div class="value"><div class="num">08</div><h3>Re-decision rhythm</h3><p>Build a re-decision checkpoint into the project rhythm — at each phase gate, the top three decisions get explicit "still valid / re-open / superseded" status. Without this rhythm, the next checkpoint is the post-implementation review, by which time it's too late.</p><div class="check">"When did we last re-check the top three decisions? Should they still hold?"</div></div>
-    </div>
-  </details>
-
-  <!-- ─── Phase 3: Post-implementation ─── -->
-  <details class="phase">
-    <summary class="phase-band">
-      <div class="phase-marker">Phase 3 of 3</div>
-      <h3 class="phase-title">Post-implementation — Adoption &amp; learning loops</h3>
-      <p class="phase-stand">Go-live is a checkpoint, not a finish line. The decision made twelve months ago is now testable in operational reality. Most practices treat this as someone else's problem (operations, change, business owners) — which is precisely why the value rarely lands. Decision integrity demands that the BA stays connected to the post-implementation evidence until adoption is verified or the decision is closed off as not realised.</p>
-      <div class="phase-chev"><span class="label">Phase</span> <span class="arrow">⌄</span></div>
-    </summary>
-    <div class="values">
-    <div class="value"><div class="num">09</div><h3>30 / 60 / 90-day adoption checkpoints</h3><p>Three fixed checkpoints after go-live. Each one answers the same three questions: Is the new behaviour happening? Is the old behaviour stopping? Is the predicted operational change visible? Anything else is theatre.</p><div class="check">"Six months from now, what evidence would say this paid off — and is it appearing?"</div></div>
-
-    <div class="value"><div class="num">10</div><h3>Operating-model change verification</h3><p>The original decision predicted operational leverage — work that disappears, decisions that become faster, capability that becomes reusable. Verify each prediction against measurable evidence. Predictions that didn't land become inputs to the next decision pack, not silent failures.</p><div class="check">"Which predicted change actually happened? Which one didn't?"</div></div>
-
-    <div class="value"><div class="num">11</div><h3>Adoption ≠ training (change-management pair)</h3><p>Training delivers knowledge. Adoption is behaviour change measured against the decision. The Change Manager owns the adoption curve; the BA owns the link back to the original decision. If adoption stalls, the decision needs re-examining — not just the comms plan.</p><div class="check">"Is the workforce trained, or is the workforce actually working differently?"</div></div>
-
-    <div class="value"><div class="num">12</div><h3>Learning loops back into the practice</h3><p>Every post-implementation review feeds two things: the practice library (what we learned about how decisions hold, drift, or break in this organisation) and the next decision pack (what assumptions we should make differently next time). A PIR with no library update is a PIR that didn't happen.</p><div class="check">"What did this project teach the practice that the next BA should inherit?"</div></div>
-    </div>
-  </details>
-
-  <!-- ─── Three safe scripts for the BA through delivery ─── -->
-  <div class="card" style="margin-top:36px" data-search>
-    <h3>Three scripts the BA can safely use through delivery</h3>
-    <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Phrases that reposition the BA as the keeper of decision integrity — not a delivery obstacle — when pressure mounts.</p>
-    <div style="display:grid;grid-template-columns:1fr;gap:10px">
-      <div class="ex"><div class="label">Script 1 · Re-open, don't drift</div>"I'm not blocking this. I'm asking us to re-open the decision it sits inside — so when it lands, we know what we chose, not what we drifted into."</div>
-      <div class="ex"><div class="label">Script 2 · Owner re-confirmation</div>"The original decision had a named owner. We've had a handover since. Until the new owner re-confirms, I'll treat this decision as provisional in the log."</div>
-      <div class="ex"><div class="label">Script 3 · Post-implementation accountability</div>"The decision predicted a measurable change six months out. I'd like to stay connected to the evidence until we know whether the change actually happened — not because it's my role to fix it, but because the next decision pack needs to know."</div>
-    </div>
-  </div>
-
-  <!-- ─── Closing pull quote for the section ─── -->
-  <div class="pull" style="margin-top:36px">
-    The BRD documents requirements. The Decision Log holds the decisions. Decision integrity is the discipline of making sure the two still match the day the project closes — and twelve months after.
-    <cite>The thesis of §02</cite>
-  </div>
-</section>
 <!-- ─── FOUR TESTS BEFORE BRD ─── -->
 <section id="tests" data-search>
   <div class="sec-head">
-    <div class="sec-num">03</div>
+    <div class="sec-num">02</div>
     <div class="sec-title">
       <div class="kicker">Decision hygiene · Before the BRD opens</div>
       <h2>Axe-Sharpening <em>Before BRD.</em></h2>
@@ -3065,7 +2606,7 @@
 <!-- ─── CLASSIFICATION & NAMING ─── -->
 <section id="taxonomy" data-search>
   <div class="sec-head">
-    <div class="sec-num">04</div>
+    <div class="sec-num">03</div>
     <div class="sec-title">
       <div class="kicker">Vocabulary · Shared language</div>
       <h2>Classification <em>&amp;</em> Naming.</h2>
@@ -3626,7 +3167,7 @@
 <!-- ─── DoR / DoD ─── -->
 <section id="dor-dod" data-search>
   <div class="sec-head">
-    <div class="sec-num">05</div>
+    <div class="sec-num">04</div>
     <div class="sec-title">
       <div class="kicker">Quality gates · Entry &amp; exit</div>
       <h2>Definition of Ready <em>/</em> Done.</h2>
@@ -3679,11 +3220,11 @@
 <!-- ─── DIAL-UPS ─── -->
 <section id="dialups" data-search>
   <div class="sec-head">
-    <div class="sec-num">06</div>
+    <div class="sec-num">05</div>
     <div class="sec-title">
-      <div class="kicker">Above the foundation · Context-driven rigour</div>
+      <div class="kicker">Above the floor · Context-driven rigour</div>
       <h2>Dial-ups <em>by Context.</em></h2>
-      <p class="stand">The minimum is the foundation. Above it, the BA dials up rigour based on the project's risk, complexity, and stakes. Read the context, choose what to add. The skill of the senior BA is knowing what.</p>
+      <p class="stand">The minimum is the floor. Above it, the BA dials up rigour based on the project's risk, complexity, and stakes. Read the context, choose what to add. The skill of the senior BA is knowing what.</p>
     </div>
   </div>
 
@@ -3764,7 +3305,7 @@
         <li>Single-paragraph problem statement</li>
         <li>Decision rights named in 3 lines</li>
         <li>Don't add weight that doesn't earn its place</li>
-        <li>Foundation still applies — but minimised, not abandoned</li>
+        <li>Floor still applies — but minimised, not abandoned</li>
       </ul>
     </div>
 
@@ -3774,11 +3315,11 @@
 <!-- ─── INDUSTRY CONTEXT ─── -->
 <section id="industry" data-search>
   <div class="sec-head">
-    <div class="sec-num">07</div>
+    <div class="sec-num">06</div>
     <div class="sec-title">
       <div class="kicker">Calibration · By industry</div>
       <h2>Dial-ups by <em>Industry.</em></h2>
-      <p class="stand">Project context (§06) tells you what shifts when the work is regulatory or multi-vendor. Industry context tells you what shifts when the work is in <em>this sector</em>. Both apply at once — a regulatory project in healthcare uses the Regulatory dial-up <strong>and</strong> the Healthcare industry shape. Each card opens to show what changes for the BA, which artefacts get heavier, and the traps to watch for. Click <em>Read</em> to expand.</p>
+      <p class="stand">Project context (§05) tells you what shifts when the work is regulatory or multi-vendor. Industry context tells you what shifts when the work is in <em>this sector</em>. Both apply at once — a regulatory project in healthcare uses the Regulatory dial-up <strong>and</strong> the Healthcare industry shape. Each card opens to show what changes for the BA, which artefacts get heavier, and the traps to watch for. Click <em>Read</em> to expand.</p>
     </div>
   </div>
 
@@ -3801,7 +3342,7 @@
       <div class="body">
       <div class="ind-block">
         <div class="ind-label">What changes for the BA</div>
-        <div class="ind-content">Regulators set the baseline — pricing submissions, network performance, customer obligations. Evidence has to survive a regulatory audit, sometimes years later. Stakeholder shape is heavy on operations, asset management, and engineering. Vocabulary: <strong>SAIDI / SAIFI, RAB, price determination, network tariff</strong>. Decisions move at the pace of regulatory cycles, not sprints.</div>
+        <div class="ind-content">Regulators set the floor — pricing submissions, network performance, customer obligations. Evidence has to survive a regulatory audit, sometimes years later. Stakeholder shape is heavy on operations, asset management, and engineering. Vocabulary: <strong>SAIDI / SAIFI, RAB, price determination, network tariff</strong>. Decisions move at the pace of regulatory cycles, not sprints.</div>
       </div>
       <div class="ind-block">
         <div class="ind-label">Artefacts that get heavier</div>
@@ -3855,7 +3396,7 @@
         <div class="num">03</div>
         <div>
           <div class="h">Healthcare</div>
-          <div class="d">Patient safety as the baseline. Clinical workflow as the language.</div>
+          <div class="d">Patient safety as the floor. Clinical workflow as the language.</div>
         </div>
         <div class="chev"><span class="label">Read</span> <span class="arrow">⌄</span></div>
       </summary>
@@ -4044,7 +3585,7 @@
 <!-- ─── METHODS & SEQUENCE ─── -->
 <section id="methods" data-search>
   <div class="sec-head">
-    <div class="sec-num">08</div>
+    <div class="sec-num">07</div>
     <div class="sec-title">
       <div class="kicker">How we do the work · Sequence + methods</div>
       <h2>Methods <em>&amp;</em> Sequence.</h2>
@@ -4077,7 +3618,7 @@
   <h3 style="font-family:'Fraunces',serif;font-size:22px;margin:24px 0 18px;font-weight:500">Elicitation methods — when to use which</h3>
 
   <div class="methods-grid">
-    <div class="method"><h4>Service journey decomposition</h4><div class="when">Best when…</div><p>The work is end-to-end and customer- or employee-facing. Each journey breaks into phases, each phase into business processes, each process into requirements — so the BA designs the structure, stakeholders contribute inside it, and traceability survives the project. <span class="babok-inline">BABOK · Process Modelling · Functional Decomposition</span></p></div>
+    <div class="method"><h4>Service journey decomposition</h4><div class="when">Best when…</div><p>The work is end-to-end and customer- or employee-facing. Proven on HR transformation programmes — 13 epics from journey-level down to acceptance criteria, written largely by stakeholders inside a structure the BA designed. <span class="babok-inline">BABOK · Process Modelling · Functional Decomposition</span></p></div>
     <div class="method"><h4>Workshop facilitation</h4><div class="when">Best when…</div><p>Stakeholder consensus is the constraint. The room needs to make the decision — the BA designs the path to it. <span class="babok-inline">BABOK · Workshops · Brainstorming · Focus Groups</span></p></div>
     <div class="method"><h4>Document &amp; system archaeology</h4><div class="when">Best when…</div><p>Current state is undocumented or contested. The BA reads the system, the data, the tickets — and reconstructs reality. <span class="babok-inline">BABOK · Document Analysis · Data Mining · Interface Analysis</span></p></div>
     <div class="method"><h4>Observation / shadowing</h4><div class="when">Best when…</div><p>Stated process and actual process diverge. Operators describe the SOP; the BA watches what they actually do. <span class="babok-inline">BABOK · Observation · Process Analysis</span></p></div>
@@ -4086,68 +3627,16 @@
   </div>
 </section>
 
-<!-- ─── AI-AUGMENTED PRACTICE ─── -->
+<!-- ─── PROMPT LIBRARY ─── -->
 <section id="prompts" data-search>
   <div class="sec-head">
-    <div class="sec-num">09</div>
+    <div class="sec-num">08</div>
     <div class="sec-title">
-      <div class="kicker">AI-augmented practice · From prompts to agents</div>
-      <h2>AI in the <em>BA Practice.</em></h2>
-      <p class="stand">AI changes what the BA produces, how fast, and increasingly who produces it. The MVP is a prompt library — versioned, run inside the requirements stack, with guardrails. But prompts are the foothold, not the destination. The maturity arc runs through prompts, into AI-assisted workflows, and onward to agentic systems that take action against the requirements artefacts themselves. This section starts where the practice can be useful tomorrow, and names what's coming next.</p>
+      <div class="kicker">AI-augmented BA · Built into the requirements stack</div>
+      <h2>The Prompt <em>Library.</em></h2>
+      <p class="stand">Codified from real transformation programmes. Versioned. Reviewed quarterly. These prompts run inside the requirements stack (for example in Confluence) with AI tooling (for example Atlassian Rovo, Microsoft Copilot), with guardrails baked in — no invented scope, evidence-only requirements, ID preservation, classification discipline. Click any prompt to copy.</p>
     </div>
   </div>
-
-  <!-- The maturity arc -->
-  <div class="ai-arc">
-    <h3 class="ai-arc-title">The maturity arc</h3>
-    <p class="ai-arc-lede">Three layers of AI integration, in increasing order of leverage and risk. Most BA practices live at layer 1 today; the practices that compound move toward layer 3 deliberately, with guardrails at each step.</p>
-
-    <div class="ai-layers">
-      <div class="ai-layer">
-        <div class="ai-layer-marker">Layer 1 · MVP today</div>
-        <h4>Generative AI prompts</h4>
-        <p class="ai-layer-stand">Curated prompts run on demand by the BA inside the requirements stack — drafting, classifying, refining, auditing. The BA stays the operator and editor.</p>
-        <ul class="ai-layer-list">
-          <li><strong>What it produces:</strong> draft requirements, classification proposals, decision packs, change-impact assessments.</li>
-          <li><strong>BA role:</strong> prompt curator, output reviewer, source-of-truth keeper.</li>
-          <li><strong>Risk profile:</strong> low — every output passes BA review before it enters the register.</li>
-          <li><strong>This guide covers it:</strong> 12 prompts below, versioned and ready to use.</li>
-        </ul>
-      </div>
-
-      <div class="ai-layer">
-        <div class="ai-layer-marker">Layer 2 · Near-term</div>
-        <h4>AI-assisted workflows</h4>
-        <p class="ai-layer-stand">AI tooling embedded in the requirements lifecycle — running automatically at defined trigger points, with the BA approving outputs rather than driving each step.</p>
-        <ul class="ai-layer-list">
-          <li><strong>Examples:</strong> auto-classification of new requirements on save · auto-traceability suggestions when a test case is created · drift detection across the register · workshop-notes-to-decision-log pipelines.</li>
-          <li><strong>BA role:</strong> workflow designer, exception handler, quality bar.</li>
-          <li><strong>Risk profile:</strong> medium — needs guardrails on what's auto-actioned vs. what's queued for review.</li>
-          <li><strong>Practice readiness:</strong> requires the foundation (§01) to already be in place — workflows that operate on a messy register multiply mess.</li>
-        </ul>
-      </div>
-
-      <div class="ai-layer">
-        <div class="ai-layer-marker">Layer 3 · Emerging</div>
-        <h4>Agentic AI</h4>
-        <p class="ai-layer-stand">Autonomous agents that take action against requirements artefacts on their own — opening tickets, drafting test cases, running register audits, flagging decision drift, escalating broken assumptions. The BA shifts from operator to overseer.</p>
-        <ul class="ai-layer-list">
-          <li><strong>Examples:</strong> register-audit agents that run nightly and report quality drift · decision-drift agents that compare current scope against decision log entries · adoption-watch agents that track post-implementation evidence.</li>
-          <li><strong>BA role:</strong> defines what agents are allowed to do, sets the rules of engagement, audits agent behaviour, holds the line on decision integrity (§02).</li>
-          <li><strong>Risk profile:</strong> high — autonomous action against shared artefacts needs strong governance, traceability of agent decisions, and clear kill-switches.</li>
-          <li><strong>Practice readiness:</strong> meaningful only when the operating rhythm (§10) is mature enough to keep agents within the practice's quality bar.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="not-cbap" style="border-left-color:var(--brass);margin-top:24px">
-      <div class="not-cbap-label" style="color:var(--brass)">The trap to avoid</div>
-      <p>Skipping to layer 3 without the foundation in place is the most expensive AI mistake a practice can make. An agentic system loose on a register full of unclassified requirements, unowned decisions, and untested assumptions doesn't accelerate the practice — it accelerates the mess. The order matters: foundation first, then prompts, then workflows, then agents. Each layer rests on the discipline of the layer below.</p>
-    </div>
-  </div>
-
-  <h3 class="ai-arc-title" style="margin-top:48px">The prompt library — Layer 1, ready today</h3>
-  <p class="ai-arc-lede">Codified from real transformation programmes. Versioned. Reviewed quarterly. These prompts run inside the requirements stack (for example in Confluence) with AI tooling (for example Atlassian Rovo, Microsoft Copilot), with guardrails baked in — no invented scope, evidence-only requirements, ID preservation, classification discipline. Click any prompt to copy.</p>
 
   <details class="prompt" data-search>
     <summary>
@@ -4568,7 +4057,7 @@ Rules:
     </summary>
     <div class="pbody">
       <h5>Use when</h5>
-      <p>Data-led / migration projects (Context D). Best used when defining a single data class — its attributes, retention rules, source/target ownership, and migration approach.</p>
+      <p>Data-led / migration projects (Context D). Used on PPM for the Forecast data class definition.</p>
       <h5>Prompt</h5>
       <div class="prompt-text"><button class="copy-btn" data-copy>Copy</button>Define the following data class for use in a migration / master data context.
 
@@ -4616,7 +4105,7 @@ Output:
       <h5>Use when</h5>
       <p>Mid-project health check or pre-handover audit. Sets the agenda for the practice forum.</p>
       <h5>Prompt</h5>
-      <div class="prompt-text"><button class="copy-btn" data-copy>Copy</button>Audit the following requirements register against a world-class BA practice foundation.
+      <div class="prompt-text"><button class="copy-btn" data-copy>Copy</button>Audit the following requirements register against a world-class BA practice floor.
 
 Register: [PASTE OR LINK]
 
@@ -4649,116 +4138,16 @@ Output: a 1-page audit summary plus a sortable issue list (Severity · Item · F
     </div>
   </details>
 
-  <!-- ─── Layer 2 starter examples: AI-assisted workflows ─── -->
-  <h3 class="ai-arc-title" style="margin-top:48px">Layer 2 starters — AI-assisted workflows</h3>
-  <p class="ai-arc-lede">Once the foundation (§01) is in place and the prompt library is in regular use, these are the workflows worth introducing first. Each runs automatically at a defined trigger point with the BA approving outputs rather than driving each step. None of these are production-grade out of the box — they're starter recipes that earn their keep with iteration. Build them in whatever orchestration layer the organisation has (Atlassian automation, Power Automate, Zapier, or a custom workflow engine).</p>
-
-  <div class="ai-extras">
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Workflow · Auto-classify on save</div>
-      <h4>Type classifier on new requirements</h4>
-      <p class="ai-extra-stand">When a requirement is saved in Draft status, the workflow runs the §04 classification prompt against the description and proposes a type (FUN / DAT / INT / WFL / RPT / etc). The BA reviews on next refinement; if accepted, the type is locked.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Trigger:</strong> Requirement status changes to Draft, or description field updated.</li>
-        <li><strong>Foundation needed:</strong> §04 Classification &amp; Naming. Stable type definitions in place.</li>
-        <li><strong>Risk control:</strong> AI proposal flagged as "AI-suggested," not auto-approved. BA confirms before the type leaves Draft.</li>
-        <li><strong>Time saved:</strong> ~3 minutes per requirement on first classification pass.</li>
-      </ul>
-    </div>
-
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Workflow · Workshop notes → decision log</div>
-      <h4>Decision-log pipeline from raw notes</h4>
-      <p class="ai-extra-stand">After a workshop, the BA drops the raw transcript or notes into a defined folder. The workflow runs the workshop-synthesis prompt, extracts decisions made / requirements candidates / open questions / actions, and proposes Decision Log entries for review.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Trigger:</strong> File added to /workshops/[date] folder, or workshop status moved to "Synthesised."</li>
-        <li><strong>Foundation needed:</strong> Artefact 1 (Decision Log) in active use. Workshop note discipline (named attendees, date, agenda).</li>
-        <li><strong>Risk control:</strong> All extracted decisions enter the Decision Log with status "Proposed — pending owner confirmation." Nothing binding until the named owner confirms.</li>
-        <li><strong>Time saved:</strong> Half a day of post-workshop synthesis becomes 30 minutes of review.</li>
-      </ul>
-    </div>
-
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Workflow · Traceability drift detection</div>
-      <h4>Orphan-requirement alert</h4>
-      <p class="ai-extra-stand">Weekly scan of the requirements register. The workflow flags requirements with no linked test case, no linked outcome, or no named owner — and posts an actionable list to the BA's queue for the next practice forum.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Trigger:</strong> Scheduled weekly (e.g. Friday close of business).</li>
-        <li><strong>Foundation needed:</strong> Artefact 5 (Requirements Register) with traceability fields populated. Artefact 7 (RTM) in active use.</li>
-        <li><strong>Risk control:</strong> Flag only — never auto-close orphans. The BA decides whether to fix, defer, or de-scope.</li>
-        <li><strong>Time saved:</strong> Catches drift weekly instead of at quarterly review, when it's already structural.</li>
-      </ul>
-    </div>
-
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Workflow · Ticket generation</div>
-      <h4>Confluence row → Jira ticket</h4>
-      <p class="ai-extra-stand">When a requirement moves to Approved status in the Confluence register, the workflow runs the Jira-ticket prompt and generates a structured ticket draft with all fields populated. The BA reviews, then submits to Jira.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Trigger:</strong> Requirement status changes from Refined to Approved.</li>
-        <li><strong>Foundation needed:</strong> Requirements Register fields (description, AC, source, owner, outcome) populated. Naming convention applied.</li>
-        <li><strong>Risk control:</strong> Generated as Jira draft, not posted live. BA submits after reviewing the description and AC.</li>
-        <li><strong>Time saved:</strong> ~10 minutes per ticket on field population.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- ─── Layer 3 starter examples: Agentic AI ─── -->
-  <h3 class="ai-arc-title" style="margin-top:48px">Layer 3 starters — Agentic AI</h3>
-  <p class="ai-arc-lede">These are emerging — most enterprises aren't here yet, and a practice should only attempt them after Layers 1 and 2 are mature. Agents differ from workflows in that they decide what to do, not just execute on a trigger. The BA shifts from operator to overseer: setting the agent's scope, defining the rules of engagement, auditing what the agent did. Each starter agent below has a clear kill-switch and an audit trail by design — without those, don't deploy.</p>
-
-  <div class="ai-extras">
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Agent · Register audit</div>
-      <h4>Nightly quality-drift agent</h4>
-      <p class="ai-extra-stand">Runs against the full requirements register overnight. Scores each requirement against the DoR/DoD checklist, flags compound conditions, unowned items, missing AC, classification inconsistencies. Posts a morning report to the BA channel.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Agent scope:</strong> Read-only. Never modifies the register.</li>
-        <li><strong>Foundation needed:</strong> §05 DoR/DoD in active use. Stable register schema.</li>
-        <li><strong>Kill-switch:</strong> Single toggle disables nightly run. Agent never escalates without BA input.</li>
-        <li><strong>Audit trail:</strong> Every flag logged with the rule that triggered it, so the BA can correct false positives in the agent's training.</li>
-      </ul>
-    </div>
-
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Agent · Decision drift</div>
-      <h4>Scope-vs-decision watcher</h4>
-      <p class="ai-extra-stand">Compares the current scope (in-flight requirements) against the Decision Log. When a new requirement appears that doesn't trace upward to a recorded decision, the agent flags it for the BA to either map back to an existing decision, open a new decision, or de-scope.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Agent scope:</strong> Read-only on Decision Log and Requirements Register. Flags only — never moves work.</li>
-        <li><strong>Foundation needed:</strong> §02 Decision Integrity discipline. Live Decision Log with traceable IDs.</li>
-        <li><strong>Kill-switch:</strong> Pause toggle. False-positive feedback loop required — the agent will over-flag without it.</li>
-        <li><strong>Audit trail:</strong> Each flag captures the requirement, the missing decision link, and the BA's resolution.</li>
-      </ul>
-    </div>
-
-    <div class="ai-extra">
-      <div class="ai-extra-marker">Agent · Adoption watch</div>
-      <h4>Post-implementation evidence agent</h4>
-      <p class="ai-extra-stand">Six months after go-live, the agent compares the predicted operational change (from the Decision Pack and Problem Statement) against the actual evidence — usage data, ticket volumes, process times, manual workarounds. Produces a 30/60/90-day adoption status report.</p>
-      <ul class="ai-extra-list">
-        <li><strong>Agent scope:</strong> Read across operational systems with explicit consent. Produces report, never acts on it.</li>
-        <li><strong>Foundation needed:</strong> §02 Decision Integrity Phase 3 in active use. Outcome metrics defined in the Problem Statement (Artefact 2).</li>
-        <li><strong>Kill-switch:</strong> Per-project opt-in only. Never runs on a project without the original sponsor's standing approval.</li>
-        <li><strong>Audit trail:</strong> Source data, comparison method, and conclusion logged for every metric. The report is a draft; the BA finalises and signs.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="not-cbap" style="border-left-color:var(--brass);margin-top:24px">
-    <div class="not-cbap-label" style="color:var(--brass)">A note on building these</div>
-    <p>None of these are install-and-run. Each one needs the foundation already in place (the artefacts in §01), the operating rhythm running (§10) to catch drift, and a deliberate iteration cycle to tune the false-positive rate. The BA's job in Layer 2 and 3 is design and oversight — defining what the workflow or agent is allowed to do, what evidence is good enough to act on, and what happens when the system gets it wrong. Build the smallest version that works, run it for a quarter, then expand.</p>
-  </div>
 </section>
 
 <!-- ─── OPERATING RHYTHM ─── -->
 <section id="rhythm" data-search>
   <div class="sec-head">
-    <div class="sec-num">10</div>
+    <div class="sec-num">09</div>
     <div class="sec-title">
       <div class="kicker">How the practice runs · Cadence</div>
       <h2>The Operating <em>Rhythm.</em></h2>
-      <p class="stand">Standards stay alive only if the practice runs them. Four cadences carry the foundation — each owned by named people, each with a clear purpose. Without these, the library is just a page no one opens.</p>
+      <p class="stand">Standards stay alive only if the practice runs them. Four cadences carry the floor — each owned by named people, each with a clear purpose. Without these, the library is just a page no one opens.</p>
     </div>
   </div>
 
@@ -4774,7 +4163,7 @@ Output: a 1-page audit summary plus a sortable issue list (Severity · Item · F
       <div class="cad">Fortnightly · 60 min</div>
       <h4>Practice forum</h4>
       <div class="who">All BAs · led by senior BA</div>
-      <p>One BA presents one artefact, the practice critiques against the foundation. Where standards are taught, refined, and made public. Quality becomes a craft conversation, not an opinion contest.</p>
+      <p>One BA presents one artefact, the practice critiques against the floor. Where standards are taught, refined, and made public. Quality becomes a craft conversation, not an opinion contest.</p>
     </div>
     <div class="beat">
       <div class="cad">Weekly · 30 min</div>
@@ -4786,19 +4175,19 @@ Output: a 1-page audit summary plus a sortable issue list (Severity · Item · F
       <div class="cad">Monthly · 90 min</div>
       <h4>Standards review</h4>
       <div class="who">Two senior BAs + Lead BA</div>
-      <p>What's working in the foundation? What's drifting? What dial-up is being added on the ground? Updates flow into the next quarterly version.</p>
+      <p>What's working in the floor? What's drifting? What dial-up is being added on the ground? Updates flow into the next quarterly version.</p>
     </div>
     <div class="beat">
       <div class="cad">Quarterly · half day</div>
       <h4>Library release</h4>
       <div class="who">Whole practice + Head of Delivery</div>
-      <p>Foundation v[next], dial-ups updated, prompt library refreshed, outcome dashboard reviewed. The library is a living thing — never a 2026 artefact.</p>
+      <p>Floor v[next], dial-ups updated, prompt library refreshed, outcome dashboard reviewed. The library is a living thing — never a 2026 artefact.</p>
     </div>
   </div>
 
   <div class="card" style="margin-top:24px" data-search>
     <h3>What gets reviewed in the practice forum</h3>
-    <p style="color:var(--muted);font-size:14px;margin-bottom:14px">A rotating rota — not a recurring lecture. Every BA presents work in progress. Reviews are against the foundation, dial-ups, and DoD — never against personal preference.</p>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:14px">A rotating rota — not a recurring lecture. Every BA presents work in progress. Reviews are against the floor, dial-ups, and DoD — never against personal preference.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
       <div class="ex"><div class="label">Week 1</div>Problem statement walkthrough</div>
       <div class="ex"><div class="label">Week 3</div>Requirement quality drill — DoD audit</div>
@@ -4821,7 +4210,7 @@ Output: a 1-page audit summary plus a sortable issue list (Severity · Item · F
     <div class="col-left">
       <div class="col-eyebrow">A note from the author</div>
       <h3>If your BA practice <em>doesn't look like this,</em> there's room to elevate it.</h3>
-      <p class="col-lede">This guide describes the foundation of a world-class BA practice — the standards, templates, methods, and operating rhythm that turn analysis output into decision quality. Bringing a practice up to the foundation is rarely a tooling problem. It's an operating discipline problem. The work is in the structure.</p>
+      <p class="col-lede">This guide describes the floor of a world-class BA practice — the standards, templates, methods, and operating rhythm that turn analysis output into decision quality. Bringing a practice up to the floor is rarely a tooling problem. It's an operating discipline problem. The work is in the structure.</p>
       <div class="col-cta-row">
         <a class="col-cta" href="https://www.linkedin.com/in/trev1n/" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
