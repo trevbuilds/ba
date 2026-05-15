@@ -297,13 +297,31 @@
   .adr-card p{font-size:13.5px;line-height:1.6;color:var(--ink);margin:0 0 10px;position:relative;z-index:1}
   .adr-card p.adr-eg{font-family:"Fraunces",serif;font-style:italic;color:var(--muted);font-size:13px;padding:10px 14px;background:rgba(15,26,48,.025);border-left:2px solid var(--brass);border-radius:0 4px 4px 0;margin-top:10px;position:relative;z-index:1}
 
-  .repo-footer{padding:60px 80px 80px;background:var(--navy-deep);color:var(--ice);position:relative}
-  .repo-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, var(--brass) 0%, var(--brass) 30%, transparent 30%)}
-  .repo-footer h3{color:#fff;font-size:28px;margin-bottom:12px;font-weight:500}
-  .repo-footer p{color:rgba(255,255,255,.65);max-width:680px;line-height:1.65;font-size:15px}
-  .repo-footer .repo-meta{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4)}
-  .repo-footer .repo-meta em{color:var(--brass-soft);font-style:italic;font-family:"Fraunces",serif;text-transform:none;letter-spacing:0;font-size:13px}
-  .repo-footer a{color:var(--brass-soft)} .repo-footer a:hover{color:#fff}
+  .repo-footer{padding:80px 80px 60px;background:var(--navy-deep);color:var(--ice);position:relative;z-index:2}
+  .repo-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--brass) 0%, var(--brass) 22%, var(--navy) 22%)}
+  .repo-footer a{color:var(--brass-soft);transition:.15s}
+  .repo-footer a:hover{color:#fff}
+  .col-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;max-width:1100px;margin:0 auto;align-items:start}
+  .col-left .col-eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:18px;font-family:"Inter Tight",sans-serif}
+  .col-left h3{font-family:"Fraunces",serif;font-size:42px;line-height:1.05;color:#fff;font-weight:400;margin-bottom:14px}
+  .col-left h3 em{font-style:italic;color:var(--brass-soft)}
+  .col-left .col-lede{font-family:"Fraunces",serif;font-style:italic;font-size:17px;color:var(--ice);line-height:1.5;margin-bottom:28px;max-width:520px}
+  .col-cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .col-cta{display:inline-block;padding:14px 26px;background:var(--brass);color:var(--navy-deep);border:none;border-radius:4px;font-family:"Inter Tight",sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:.2s;cursor:pointer}
+  .col-cta:hover{background:var(--brass-soft);color:var(--navy-deep);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,144,46,.4)}
+  .col-cta-secondary{color:var(--brass-soft);font-size:13px;text-decoration:underline;text-decoration-color:rgba(221,182,103,.3);text-underline-offset:4px}
+  .col-cta-secondary:hover{color:#fff;text-decoration-color:var(--brass)}
+  .col-right{border-left:1px solid rgba(255,255,255,.1);padding-left:60px}
+  .col-block{margin-bottom:28px}
+  .col-block:last-child{margin-bottom:0}
+  .col-block .label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:8px;font-family:"Inter Tight",sans-serif}
+  .col-block .col-value{font-family:"Fraunces",serif;font-size:15px;color:#fff;line-height:1.5;font-weight:400}
+  .col-block .col-value em{font-style:italic;color:var(--brass-soft)}
+  .col-block .col-value a{color:#fff;border-bottom:1px solid rgba(255,255,255,.2)}
+  .col-block .col-value a:hover{color:var(--brass-soft);border-bottom-color:var(--brass)}
+  .col-baseline{margin-top:60px;padding-top:32px;border-top:1px solid rgba(255,255,255,.08);max-width:1100px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);font-weight:500;font-family:"Inter Tight",sans-serif}
+  .col-baseline .seal-mini{display:inline-flex;align-items:center;gap:10px}
+  .col-baseline .seal-mini-mark{width:24px;height:24px;border-radius:50%;background:var(--brass);display:grid;place-items:center;color:var(--navy-deep);font-family:"Fraunces",serif;font-style:italic;font-weight:600;font-size:14px}
 
   @media (max-width: 1024px){
     .shell{grid-template-columns:1fr}
@@ -316,6 +334,10 @@
     .masthead .stats{grid-template-columns:repeat(2,1fr)}
     .masthead .stat{border-right:none;padding-right:0;padding-bottom:20px}
     .repo-footer{padding:48px 32px}
+    .col-grid{grid-template-columns:1fr;gap:40px}
+    .col-right{border-left:none;border-top:1px solid rgba(255,255,255,.1);padding-left:0;padding-top:32px}
+    .col-left h3{font-size:32px}
+    .col-baseline{flex-direction:column;gap:14px;align-items:flex-start;margin-top:40px}
     .phase-row{grid-template-columns:1fr;gap:14px}
     .phase-tag{border-right:none;border-bottom:1px solid var(--rule);padding-right:0;padding-bottom:10px;min-width:0}
     .phase-body .ph-grid{grid-template-columns:1fr}
@@ -3645,26 +3667,226 @@
     </div>
   </div>
   <div class="prose">
-    <p>The decisions below are the ones the senior leader must own personally — not delegate to the implementation partner, not absorb into a workstream lead's remit. Each one has a long tail; each one is expensive to reverse; each one materially shapes what the next decade of operations will feel like.</p>
-    <div class="numgrid">
-      <div class="numblock" data-num="01"><div class="nb-num">Decision 01</div><h3>The chart of accounts &amp; cost-centre hierarchy</h3><p>The operating model in numbers. Designed for the next operating model, not the last one. Owned by CFO; reviewed by COO; approved by the sponsor.</p><div class="check">Compounds for: a decade. Reverses with: a full historical re-baselining.</div></div>
-      <div class="numblock" data-num="02"><div class="nb-num">Decision 02</div><h3>The master data ownership model</h3><p>Who owns each class. Who can change the structure (vs. the records). What the data governance forum's remit is, and what its escalation path is.</p><div class="check">Compounds for: every downstream report. Reverses with: an entire governance redesign.</div></div>
-      <div class="numblock" data-num="03"><div class="nb-num">Decision 03</div><h3>The integration architecture</h3><p>Direct vs middleware vs streaming, and which traffic uses which. The integration platform team, its remit, and its standards.</p><div class="check">Compounds for: every system added to the estate. Reverses with: a multi-year re-platforming.</div></div>
-      <div class="numblock" data-num="04"><div class="nb-num">Decision 04</div><h3>The controls fabric, designed in</h3><p>SoD, RBAC, delegations, audit trail — all in the original design, not bolted on. Tested in dry-run before go-live. Owned by risk + finance, not the implementation partner.</p><div class="check">Compounds for: every audit, every regulator, every incident. Reverses with: significant operational disruption.</div></div>
-      <div class="numblock" data-num="05"><div class="nb-num">Decision 05</div><h3>The post-go-live operating model</h3><p>Who owns each module after the implementation partner leaves. The product team structure. The release cadence. The continuous-improvement backlog. The benefits owner twelve months out.</p><div class="check">Compounds for: whether the programme actually pays back. Reverses with: another transformation.</div></div>
-      <div class="numblock" data-num="✦"><div class="nb-num">Cross-cutting</div><h3>The discipline of saying no</h3><p>Every successful ERP programme is more notable for what it didn't customise than what it did. Every failed one is recognisable by the volume of bespoke work that survived &ldquo;just this once.&rdquo;</p><div class="check">Compounds for: every upgrade, every patch, every audit. The cheapest decision and the most contested.</div></div>
+    <p>The decisions below are the ones the senior leader must own personally — not delegate to the implementation partner, not absorb into a workstream lead's remit. Each one has a long tail; each one is expensive to reverse; each one materially shapes what the next decade of operations will feel like. Each card below names the choice being made, the diagnostics that narrow the answer, where the supporting material lives in the rest of this guide, and the signals that tell you whether the decision is being owned at the right level or quietly drifting away.</p>
+
+    <details class="module" style="margin-top:32px">
+      <summary><span class="num">01</span><div><div class="h">The chart of accounts &amp; cost-centre hierarchy</div><div class="d">The operating model in numbers. Owned by CFO; reviewed by COO; approved by the sponsor.</div></div><span class="chev">READ</span></summary>
+      <div class="module-body">
+        <h4>The choice</h4>
+        <p>How the business will measure itself for the next decade. Specifically: the segment dimensions (entity, function, region, product, project, customer); the account-number structure and depth; the cost-centre hierarchy and its alignment with the position hierarchy; the mapping rules that translate operations into ledger postings.</p>
+
+        <h4>What the right answer depends on</h4>
+        <ul>
+          <li><strong>What operating model are we building toward — not the one we have today?</strong> CoA built for the past calcifies the future.</li>
+          <li><strong>What dimensions does the board, the regulator, and the CFO actually need to see?</strong> Anything else is decoration that creates downstream work.</li>
+          <li><strong>How will mergers, acquisitions, divestments, and re-organisations be absorbed?</strong> A rigid hierarchy locks future structure; a flexible one risks no structure at all.</li>
+          <li><strong>What's the relationship between cost centres and positions (§06 / CHRO)?</strong> If they don't reconcile, payroll allocations will never tie to operations.</li>
+        </ul>
+
+        <h4>Where the supporting material lives</h4>
+        <p>§01 Modules (Financial Accounting), §02 Master Data &amp; the Spine, §04 Governance &amp; Controls, §06 Roles (CFO), §08-03 Implementation Design, §11 ADR Class 01 (structural data decisions).</p>
+
+        <div class="dual-grid">
+          <div class="right-box">
+            <div class="rb-label">Signals you're owning it well</div>
+            <p>CFO has personally walked the design pack with the COO and the sponsor. Mapping rules are evidenced against actual transactions, not theoretical ones. There is an ADR with named decision-makers, alternatives considered, and a review trigger. The board can read its own dashboard from the CoA without translation.</p>
+          </div>
+          <div class="wrong-box">
+            <div class="wb-label">Signals it's drifting</div>
+            <p>The implementation partner is presenting the CoA design. Finance team are the only ones in the room. The structure is "what the system suggests." Future-state operating-model considerations weren't in the design conversation. The reporting team is being told to make the data work because the CoA was already decided.</p>
+          </div>
+        </div>
+
+        <div class="ph-out"><strong>Compounds for</strong>A decade.</div>
+        <div class="ph-out"><strong>Reverses with</strong>A full historical re-baselining of every reporting period.</div>
+      </div>
+    </details>
+
+    <details class="module">
+      <summary><span class="num">02</span><div><div class="h">The master data ownership model</div><div class="d">Who owns each class. Who can change structure. What the data governance forum's remit is.</div></div><span class="chev">READ</span></summary>
+      <div class="module-body">
+        <h4>The choice</h4>
+        <p>For each master data class — customer, vendor, item, GL, position, asset, project, location — three decisions: who is the named accountable owner; who has authority to change <em>structure</em> versus authority to change <em>records</em>; what the data governance forum looks like, who chairs it, and what its escalation path is.</p>
+
+        <h4>What the right answer depends on</h4>
+        <ul>
+          <li><strong>Which data class is most contested today?</strong> The customer master in organisations where sales and finance fight; the item master where supply chain and engineering fight; the position master where HR and finance fight.</li>
+          <li><strong>Is the master data forum sponsored at the executive level, or buried in a working group?</strong> Forums without executive sponsorship don't make decisions; they minute disagreements.</li>
+          <li><strong>What's the post-go-live cadence?</strong> Steady-state data governance is more consequential than implementation-phase data governance, and almost always underfunded.</li>
+          <li><strong>What integrations does the master data master serve?</strong> See §03 — every master that feeds another system inherits the discipline of integration contracts.</li>
+        </ul>
+
+        <h4>Where the supporting material lives</h4>
+        <p>§02 Master Data &amp; the Spine (the five classes; ownership model), §06 Roles (Data Migration &amp; Governance Lead), §08-04 Data Migration, §08-10 Legacy Decommissioning (retention decision), §11 ADR Class 01.</p>
+
+        <div class="dual-grid">
+          <div class="right-box">
+            <div class="rb-label">Signals you're owning it well</div>
+            <p>Each data class has a named master data steward whose role description includes the accountability. The forum meets to monthly cadence with executive sponsorship. Structure changes go through ADRs. Records changes go through workflow. Integration contracts (§03) reference master data ownership explicitly. The auditor knows who to call about each class.</p>
+          </div>
+          <div class="wrong-box">
+            <div class="wb-label">Signals it's drifting</div>
+            <p>"Master data is managed by the team that uses it." Multiple systems claim authority for the same class. The data governance forum doesn't have a sponsor. Records and structure changes go through the same path. Implementation phase governance assumed to continue into BAU without funding. The migration team is being asked to make policy decisions.</p>
+          </div>
+        </div>
+
+        <div class="ph-out"><strong>Compounds for</strong>Every downstream report and every AI initiative built on the data (§12).</div>
+        <div class="ph-out"><strong>Reverses with</strong>An entire governance redesign — and the political weather that comes with it.</div>
+      </div>
+    </details>
+
+    <details class="module">
+      <summary><span class="num">03</span><div><div class="h">The integration architecture</div><div class="d">Direct vs middleware vs streaming. Which traffic goes which way. The integration platform team.</div></div><span class="chev">READ</span></summary>
+      <div class="module-body">
+        <h4>The choice</h4>
+        <p>Three patterns (§03): direct point-to-point, middleware/iPaaS, event-driven streaming. The decision is not which one to use — it's the <em>policy</em> for which traffic uses which, the standards every integration must declare, the platform team that owns the estate, and the catalogue that keeps it accountable.</p>
+
+        <h4>What the right answer depends on</h4>
+        <ul>
+          <li><strong>How many systems are in the estate today, and how many will be in five years?</strong> Direct point-to-point survives two-system estates; an iPaaS pays back the moment a third arrives.</li>
+          <li><strong>What regulatory traceability is required?</strong> Some regimes (financial services, healthcare, defence) require integration traceability that direct connections can't provide.</li>
+          <li><strong>Is real-time genuinely needed, or is "real-time" a stand-in for "we haven't designed the cadence"?</strong> Real-time is expensive; scheduled is cheap. Most cases don't need real-time.</li>
+          <li><strong>Who owns the integration platform after the implementation partner leaves?</strong> If no enterprise team can run it, the partner becomes a permanent fixture.</li>
+        </ul>
+
+        <h4>Where the supporting material lives</h4>
+        <p>§03 The Integration Layer (three patterns + common ERP flows catalogue), §06 Roles (Enterprise Architect), §08-03 Implementation Design, §08-07 Lifecycle Management, §11 ADR Class 02 (integration architecture decisions).</p>
+
+        <div class="dual-grid">
+          <div class="right-box">
+            <div class="rb-label">Signals you're owning it well</div>
+            <p>The enterprise architect owns the pattern policy in writing. Every integration has a data contract (§03) before build. An iPaaS or equivalent is stood up with an enterprise-side owner, not partner-owned by default. Standards are declared and enforced. The catalogue is current and reviewed quarterly. New integration requests go through a written architecture decision, not a chat.</p>
+          </div>
+          <div class="wrong-box">
+            <div class="wb-label">Signals it's drifting</div>
+            <p>Each integration is its own snowflake. The implementation partner is making pattern choices on the fly. There is no integration catalogue, or it's six months out of date. "We'll standardise after go-live" is the current plan. Real-time is the default rather than the exception. The platform team is funded as infrastructure, not as a product (§08-08).</p>
+          </div>
+        </div>
+
+        <div class="ph-out"><strong>Compounds for</strong>Every system added to the estate over the next decade.</div>
+        <div class="ph-out"><strong>Reverses with</strong>A multi-year re-platforming exercise of the integration estate.</div>
+      </div>
+    </details>
+
+    <details class="module">
+      <summary><span class="num">04</span><div><div class="h">The controls fabric, designed in</div><div class="d">SoD, RBAC, delegations, audit trail. In the original design, not bolted on.</div></div><span class="chev">READ</span></summary>
+      <div class="module-body">
+        <h4>The choice</h4>
+        <p>Whether controls are a <em>design input</em> from week one — present in the role design, the workflow, the audit trail granularity, the segregation of duties matrix — or whether they are retrofitted after the system works. Same target state; an order of magnitude difference in cost, risk, and credibility with the auditor.</p>
+
+        <h4>What the right answer depends on</h4>
+        <ul>
+          <li><strong>Who has named accountability for the SoD matrix?</strong> If it's the implementation partner or "we'll get to it," the matrix won't exist when needed.</li>
+          <li><strong>Is the audit trail being designed for the database admin or for the auditor?</strong> A trail nobody can query under time pressure has failed at its job.</li>
+          <li><strong>How is RBAC being driven?</strong> By HR data through joiner-mover-leaver automation, or by individual requests after the fact?</li>
+          <li><strong>What's the dry-run plan?</strong> Auditors should walk the controls before go-live, not discover them at year-end.</li>
+        </ul>
+
+        <h4>Where the supporting material lives</h4>
+        <p>§04 Governance &amp; Controls (the four disciplines), §06 Roles (Security &amp; Risk Lead), §08-03 Implementation Design, §08-09 Audit &amp; Assurance, §11 ADR Class 03 (controls &amp; security decisions).</p>
+
+        <div class="dual-grid">
+          <div class="right-box">
+            <div class="rb-label">Signals you're owning it well</div>
+            <p>Risk + internal audit are in the design forum from week one. The SoD matrix is built against the role design, not after it. JML is automated through HR. The audit trail has been demonstrated to internal audit with sample queries before go-live. There is a dry-run with the external auditor in the months before cutover. Controls are written into ADRs (§11).</p>
+          </div>
+          <div class="wrong-box">
+            <div class="wb-label">Signals it's drifting</div>
+            <p>Risk and audit aren't in the design forum. Controls are scheduled "for hypercare." The SoD matrix is generic, copied from another implementation. Access is granted by individual request. The audit trail logs everything but indexes nothing. The first audit will be the first real test of the controls fabric.</p>
+          </div>
+        </div>
+
+        <div class="ph-out"><strong>Compounds for</strong>Every audit, every regulator interaction, every incident response.</div>
+        <div class="ph-out"><strong>Reverses with</strong>Significant operational disruption and a controls remediation programme.</div>
+      </div>
+    </details>
+
+    <details class="module">
+      <summary><span class="num">05</span><div><div class="h">The post-go-live operating model</div><div class="d">Who owns each module after the partner leaves. The product team. The benefits owner twelve months out.</div></div><span class="chev">READ</span></summary>
+      <div class="module-body">
+        <h4>The choice</h4>
+        <p>What "live" actually means after the implementation partner steps down. Specifically: the named Product Owner per module, the team that supports the platform in BAU, the release cadence, the continuous-improvement backlog, the legacy decommissioning kill date (§08-10), and the named benefit owner twelve months out who is accountable for the operating-model change.</p>
+
+        <h4>What the right answer depends on</h4>
+        <ul>
+          <li><strong>Who, by name, will own each module the day after hypercare ends?</strong> A role title isn't a name. A name is a name.</li>
+          <li><strong>Is the team funded as a product or as infrastructure?</strong> Product teams have a backlog, cadence, and roadmap. Infrastructure teams have tickets.</li>
+          <li><strong>What does the benefits register look like twelve months out, and who attests to each line?</strong> If nobody is attesting, nothing is being measured.</li>
+          <li><strong>Is the legacy decommissioning plan in place, with a kill date and a named accountable?</strong> If the legacy stays running, the business case never closes.</li>
+        </ul>
+
+        <h4>Where the supporting material lives</h4>
+        <p>§06 Roles (Product Owner, Sponsor, COO), §08-06 Hypercare &amp; Stabilisation, §08-07 Lifecycle Management, §08-08 Continuous Improvement, §08-10 Legacy Decommissioning, §10 Benefits Realisation, §11 ADR Class 05 (operating-model decisions).</p>
+
+        <div class="dual-grid">
+          <div class="right-box">
+            <div class="rb-label">Signals you're owning it well</div>
+            <p>Each module has a named Product Owner before cutover. The BAU operating model is documented, funded, and staffed before hypercare ends. The benefits register has named accountables who attest quarterly. The legacy kill date is in someone's performance review. The implementation partner has a defined exit date that the operating model is ready for.</p>
+          </div>
+          <div class="wrong-box">
+            <div class="wb-label">Signals it's drifting</div>
+            <p>"We'll figure out support after go-live." Product Owners are role titles, not names. The implementation partner is quietly being retained for "transitional support" with no exit date. The benefits register goes into a drawer the week after the press release. The legacy system is still running eighteen months later, with the licence renewal not even questioned.</p>
+          </div>
+        </div>
+
+        <div class="ph-out"><strong>Compounds for</strong>Whether the programme actually pays back — which is the only question that matters.</div>
+        <div class="ph-out"><strong>Reverses with</strong>Another transformation in five years to fix what this one was meant to deliver.</div>
+      </div>
+    </details>
+
+    <h3 style="margin-top:48px">The governing principle: the discipline of saying no</h3>
+    <div class="numblock" data-num="✦" style="max-width:920px">
+      <div class="nb-num">Cross-cutting</div>
+      <h3>Every customisation is a future tax on every release</h3>
+      <p>Every successful ERP programme is more notable for what it didn't customise than what it did. Every failed one is recognisable by the volume of bespoke work that survived &ldquo;just this once.&rdquo; The five decisions above all share a common shape: each one is easier to compromise on in the moment, and each compromise generates a tax that's collected at every subsequent release, every audit, every transformation conversation.</p>
+      <p>The senior leader's discipline is not just to make the five decisions well. It is to <em>protect</em> them through the political weather of delivery — when the implementation partner says &ldquo;it would be simpler to,&rdquo; when a workstream lead says &ldquo;the business is asking for,&rdquo; when the timeline says &ldquo;we don't have time to,&rdquo; when the vendor says &ldquo;our standard practice is.&rdquo; The structural decision is being attacked. The structural answer is to record the attempt as an ADR (§11), name the consequence, and either accept the variation deliberately or hold the line.</p>
+      <div class="check">Compounds for: every upgrade, every patch, every audit. The cheapest decision and the most contested.</div>
     </div>
+
     <div class="footer-quote">The senior leader who owns these five decisions personally, and resists the pull to delegate any of them, gives the programme an order-of-magnitude better chance of compounding. Everything else can be handled by competent delivery. These five cannot.<span class="attr">— The leader's commitment</span></div>
   </div>
 </section>
 
 <footer class="repo-footer">
-  <h3>Field Guide No. 03 · <em>The ERP Field Guide</em></h3>
-  <p>This is a working reference, not a textbook. Operational mechanics — module-by-module workflows, technology choices, integration patterns, cutover toolkits — live in the companion library. The Field Guide is the thesis and the structure; the library is the depth.</p>
-  <p style="margin-top:14px;">Parallel volumes: <a href="../businessanalysis/MVBA/index.html">Field Guide No. 01 (MVBA)</a> · <a href="../transformation/leader/index.html">Field Guide No. 02 (Transformation Leader)</a> · <a href="../index.html">Library index</a></p>
-  <div class="repo-meta">
-    <span>Field Guide No. 03 · First Edition · 2026</span>
-    <span><em>The working library</em> · Trevin Nimaladasa</span>
+  <div class="col-grid">
+
+    <div class="col-left">
+      <div class="col-eyebrow">A note from the author</div>
+      <h3>If your ERP programme <em>doesn't sound like this,</em> the structural decisions are drifting.</h3>
+      <p class="col-lede">This guide is the senior practitioner's view — the operating-model commitments that compound for a decade, the lifecycle in practice, the relationships that don't manage themselves, and the five decisions a leader cannot delegate. It's a working reference, not a textbook. Use it before the next decision pack, not after.</p>
+      <div class="col-cta-row">
+        <a class="col-cta" href="https://www.linkedin.com/in/trev1n/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="col-cta-secondary" href="../index.html">Browse the full library</a>
+      </div>
+    </div>
+
+    <div class="col-right">
+      <div class="col-block">
+        <div class="label">Author</div>
+        <div class="col-value">Trevin Nimaladasa<br><em>Senior business analyst &amp; transformation advisor</em></div>
+      </div>
+      <div class="col-block">
+        <div class="label">Edition</div>
+        <div class="col-value">Field Guide No. 03 · First Edition · 2026<br><em>Reviewed quarterly. Updates published with version notes.</em></div>
+      </div>
+      <div class="col-block">
+        <div class="label">Parallel volumes</div>
+        <div class="col-value"><a href="../businessanalysis/MVBA/index.html">Field Guide No. 01 · The Minimum Viable BA Practice</a><br><a href="../transformation/leader/index.html">Field Guide No. 02 · The Transformation Leader</a></div>
+      </div>
+      <div class="col-block">
+        <div class="label">Rights</div>
+        <div class="col-value">© 2026 Trevin Nimaladasa. The frameworks, decision tools, and reference content in this guide are intended for use inside the reader's own practice. Attribution appreciated.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-baseline">
+    <div class="seal-mini">
+      <div class="seal-mini-mark">T</div>
+      <span>The ERP Field Guide</span>
+    </div>
+    <div>Vol. III · First Edition · 2026</div>
   </div>
 </footer>
 
