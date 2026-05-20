@@ -33,6 +33,7 @@ Nothing pending.
 ### Fixed
 - **20 broken sibling-path links in Requirements Engineering** repointed to relative paths: 18 references to `mvba.html` → `../MVBA/index.html`, and 2 references to `erp-implementation.html` → `../../erp/index.html`.
 - **ERP Field Guide footer** had hardcoded `https://trevbuilds.github.io/guides/...` URLs that broke when the repo was renamed from `ba` to `guides` (and would break again on any future rename). Replaced with relative paths.
+- **"Open the live explorer" CTA** inside Requirements Engineering (§ explorer build section) was a `href="#"` placeholder; now correctly opens `explorer.html` in a new tab. Stale "replace the link target" instructional note removed.
 
 ---
 
