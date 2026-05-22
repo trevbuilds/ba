@@ -17,6 +17,20 @@ Nothing pending.
 
 ---
 
+## [0.5.0] — 2026-05-22
+
+### Added
+- **Companion diagnostic — The Minimum Viable BA Practice Score.** A 12-question diagnostic for BA practice leaders, scoring a practice across four dimensions (system-of-work maturity, traceability, stakeholder co-production, AI governance) and returning a practice archetype. Lives at `businessanalysis/score/index.html`.
+- **Scorecard linked from Field Guide No. 01 (MVBA)** as a prominent "Start here · A first step" callout directly beneath the masthead.
+- **Scorecard linked from Field Guide No. 04 (Requirements Engineering)** in the "Read MVBA first" readiness card (it tests exactly the upstream foundations the guide depends on) and in the footer library nav.
+- **Google Analytics** (`gtag.js`, `G-DS33NXD3JT`) wired into the scorecard `<head>`.
+- **Library back-references** from the scorecard: "Browse the full library" link and a library link in the results colophon.
+
+### Fixed
+- **Scorecard's own outbound links** were broken and would 404 on case-sensitive GitHub Pages: `../mvba/index.html` → `../MVBA/index.html` (folder is uppercase `MVBA`), and `../req-eng/index.html` → `../Requirements/index.html` (folder is `Requirements`).
+
+---
+
 ## [0.4.0] — 2026-05-20
 
 ### Added
@@ -70,7 +84,8 @@ Nothing pending.
 
 ---
 
-[Unreleased]: https://github.com/trevbuilds/guides/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/trevbuilds/guides/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/trevbuilds/guides/releases/tag/v0.5.0
 [0.4.0]: https://github.com/trevbuilds/guides/releases/tag/v0.4.0
 [0.3.1]: https://github.com/trevbuilds/guides/releases/tag/v0.3.1
 [0.3.0]: https://github.com/trevbuilds/guides/releases/tag/v0.3.0
