@@ -17,6 +17,19 @@ Nothing pending.
 
 ---
 
+## [0.6.0] — 2026-05-28
+
+### Added
+- **Companion diagnostic — The ERP Operating-Model Score.** A 15-question diagnostic for leaders accountable for an ERP, scoring a core system across five dimensions (decision integrity, data & integration backbone, controls & assurance, delivery & adoption, lifecycle continuity) and returning the one dimension to fix first. Lives at `erp/score/index.html`.
+- **ERP scorecard linked from Field Guide No. 03 (ERP)** as a prominent "Start here · A first step" callout in the masthead beside the byline, plus a "Companion diagnostic" block in the footer.
+- **MVBA scorecard linked from Field Guide No. 01 (MVBA) footer** as a matching "Companion diagnostic" block, so the diagnostic is reachable from both the open and the close of the guide.
+- **Both scorecards listed on the root library index** as companion-diagnostic aux entries with their dimensions and question counts.
+
+### Fixed
+- **ERP scorecard's own outbound links** were absolute `https://trevbuilds.github.io/guides/...` URLs that break on repo rename or path change. Converted to relative paths (`../index.html`, `../../businessanalysis/MVBA/index.html`, `../../index.html`) — matches the library-wide relative-link convention.
+
+---
+
 ## [0.5.0] — 2026-05-22
 
 ### Added
@@ -84,7 +97,8 @@ Nothing pending.
 
 ---
 
-[Unreleased]: https://github.com/trevbuilds/guides/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/trevbuilds/guides/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/trevbuilds/guides/releases/tag/v0.6.0
 [0.5.0]: https://github.com/trevbuilds/guides/releases/tag/v0.5.0
 [0.4.0]: https://github.com/trevbuilds/guides/releases/tag/v0.4.0
 [0.3.1]: https://github.com/trevbuilds/guides/releases/tag/v0.3.1
